@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Üst, Sol, Orta, Sağ, Alt Yapısı</title>
+<style>
+
+.tablo1, .th1, .td1 {
+    border: 1px 
+   
+}
+
+
+.tablo2{
+    border: 2px solid #000000;
+    text-align: left;
+    padding: 10px;
+    background-color: #dddddd; 
+    border-style: dashed; 
+}
+
+.tablo3{
+    border: 2px solid #ff0000;
+    text-align: left;
+    padding: 10px;
+    background-color: #dddddd; 
+    border-style: dashed;
+    width: 853px;
+}
+
+.tablo4{
+    border: 2px solid #d6d6d6;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffffff; 
+    width: 853px;
+    border-left:7px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    height: 75px;
+    
+}
+
+.tablo5{
+    border: px solid #d6d6d6;
+    text-align: left;
+    padding: 5px;
+    width: 853px;
+    text-decoration: none;
+
+}
+.tablo5 a:link {
+color: #000;
+text-decoration: none;
+}
+.tablo5 a:visited {
+text-decoration: none;
+color: #000;
+}
+.tablo5 a:hover {
+text-decoration: underline;
+color: #F00;
+}
+
+
+
+
+.td1 {
+    padding: 20px 240px 0px 0px;
+}
+
+
+ul.ustmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2E3C50;
+    height: 120px;
+    
+}
+
+li a.ustmenu1 {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 53px 25px;
+    text-decoration: none;
+    float: right;
+}
+
+li a:hover:not(.active) {
+
+    background-color: rgb(42, 45, 65);
+    color: white;
+}
+
+
+
+
+/* Aktif Menü Öğesi Stili */
+li a.active {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+li a.active:hover {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+}
+
+/* Menü Stili */
+.menu1 {
+
+    list-style-type: none;
+    margin: 10px;
+    padding: 20px;
+    width: 230px;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu a {
+
+    text-align: left;
+    text-decoration: none;
+    color: #2E3C50;
+    font-weight: bold;
+    border: 1px solid #d8d8d8;
+    border-style: dotted;
+    display: block;
+    padding: 5px;
+    background: #ffffff;
+    border-left: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header, footer {
+
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+
+    display: flex;
+    height: calc(100% - 160px); /* Sayfa yüksekliğinin %100'ü ve üst ve alt kısımların yüksekliğinin toplamından 160px eksiltiyoruz */
+}
+
+aside, main {
+
+    padding: 20px;
+    box-sizing: border-box; /* Kutuların içerik kutusu dahil tüm alanı kaplamasını sağlar */
+}
+
+aside {
+
+    background-color: #ffffff;
+    width: 400px;
+}
+
+main {
+
+    background-color: #ffffff;
+    width: 1000px;
+}
+
+footer {
+
+    position: relative;
+    margin-top: 1050px; /* Sayfanın altından yukarı doğru bir mesafe belirleyin */
+    width: 100%;
+    background-color: #2E3C50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.resim{
+    position: relative;
+    left: 100px;
+    float: left;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <ul class="ustmenu">  
+        <div class="resim">
+            <img src="resimler/logo.png" alt="">
+                    </div>
+                    <li><a class="ustmenu1" href="iletisim.html">İLETİŞiM</a></li>  
+                    <li><a class="ustmenu1" href="hakkimizda.html">HAKKIMIZDA</a></li> 
+                    <li><a class="ustmenu1" href="https://www.sgk.gov.tr/Duyuru" target="_blank">PRATİK BİLGİLER</a></li>  
+                    <li><a class="ustmenu1" href="hizmetlerimiz.html">HİZMETLERİMİZ</a></li>
+                    <li><a class="ustmenu1" href="giris.html">ANA SAYFA</a></li>
+          </ul>
+
+</header>
+
+<div class="container">
+    <aside><ul class="menu">
+			
+        <ul class="menu1">
+        <li><a class="active">ALFABETİK MENÜ</a></li>
+        <li><a href="amortisman.html">Amortismanlar</a></li>
+        <li><a href="asgariücretler.html">Asgeri Ücretler</a></li>
+        <li><a href="bagkur.html">Bağ-Kur</a></li>
+        <li><a href="beyanname.html">Beyanname Süreleri</a></li>
+        <li><a href="dilekceform.html">Dilekçe ve Formlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/portal/login" target="_blank">E-Beyanname</a></li>
+        <li><a href="https://ebildirge.sgk.gov.tr/WPEB/amp/loginldap" target="_blank">E-Bildirge</a></li>
+        <li><a href="hadvemiktar.html">Had ve Miktarlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/" target="_blank">İnternet Vergi Dairesi</a></li>
+        <li><a href="iscilikmaliyetleri.html">İşçilik Maliyetleri</a></li>
+        <li><a href="https://www.gib.gov.tr/gibmevzuat" target="_blank">Kanun ve Mevzuatlar</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/yararli-bilgiler/kdv-oranlari-listesi" target="_blank">KDV Oranları Listesi</a></li>
+        <li><a href="https://www.resmigazete.gov.tr/" target="_blank">Resmi Gazete</a></li>
+        <li><a href="sorgulama.html">Sorgulamalar</a></li>
+        <li><a href="https://www.sgk.gov.tr/" target="_blank">SGK (Sigorta)</a></li>
+        <li><a href="tekdüzen.html">Tek Düzen Hesap Planı</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/vergi-takvimi" target="_blank">Vergi Takvimi</a></li>
+        <li><a href="vergitürü.html">Vergi Türü Kodları</a></li>
+        <li><a href="yillikizinler.html">Yıllık Ücretli İzinler</a></li>
+    </ul>
+</ul></aside>
+    <main>
+
+        <h2>ASGARİ ÜCRETİN NET HESABI VE İŞVERENE MALİYETİ </h2>
+        <h5>Çalışma Genel Müdürlüğü / Çalışma İstatistikleri Daire Başkanlığı tarafından hazırlanmıştır.</h5>
+        <h5>01/01/2024 - 31/12/2024</h5>
+        <h2>ASGARİ ÜCRETİN NETİNİN HESABI (TL / AY)</h2>
+        <table class="tablo1">
+            
+            <tr class="tr1"><td class="td1">ASGARİ ÜCRET</td><td>20,002.50</td></tr>
+            <tr><td>SGK PRİMİ% 14</td><td>2,800.35</td></tr>
+            <tr><td>İŞSİZLİK SİG. PRİMİ %1</td><td>200.03</td></tr>
+            <tr><td>KESİNTİLER TOPLAMI</td><td>3,000.38</td></tr>
+            <tr><td><b>NET ASGARİ ÜCRET</b></td><td>17,002.12	</td></tr>
+            <tr><td></td><td></td></tr>
+            <tr><td><b>İŞVERENE MALİYETİ (TL / AY)</b></td><td></td></tr>
+            <tr><td>ASGARİ ÜCRET</td><td>20,002.50</td></tr>
+            <tr><td>SGK PRİMİ% 15.5 (İşveren Payı) (*)</td><td>3,100.39</td></tr>
+            <tr><td>İŞVEREN İŞSİZLİK SİGORTA PRİMİ % 2</td><td>400.05</td></tr>
+            <tr><td><b>İŞVERENE TOPLAM MALİYET</b></td><td>23,502.94</td></tr>
+        </table>
+        <br>
+        <br>
+        <br>
+    
+    <table class="tablo2">
+        <tr><td >Not 1: 28/01/2004 tarih ve 5083 Sayılı Türkiye Cumhuriyetinin Para Birmi Hakkında Kanunun 2. maddesi uyarınca; Türk Lirası değerlerin yeni Türk Lirasına dönüşüm işlemlerinin ve Yeni Türk Lirası cinsinden yapılan işlemlerin sonuçlarında ve ödeme aşamalarında yarım Kuruş ve üzerindeki değerler bir Yeni Kuruşa tamamlanır; yarım Yeni Kuruşun altındaki değerler dikkate alınmamıştır.
+                <br><br><br>
+            Not 2: Gelir Vergisi ve Damga Vergisi hesaplanmamıştır.
+                <br><br><br>
+            (*) 5510 sayılı Kanunun 81. maddesinin (ı) bendine göre, bentde belirtilen şartları sağlayan işverenlere, SGK primi işveren payında 5 puanlık indirim öngörüldüğünden hesaplamalar buna göre yapılmıştır. Gerekli şartları sağlamayan işverenler için, SGK primi işveren payı %20,5'dir. 6385 sayılı kanunun 9. maddesiyle yapılan düzenleme ile 01.09.2013 tarihinde itibaren geçerli olmak üzere 5510 sayılı kanunun 81.maddesi “Kısa vadeli sigorta kolları prim oranı, sigortalının prime esas kazancının %2’sidir."</td></tr>
+    </table>
+    <br>
+    <table class="tablo3">
+        <tr><td><b>HESAPLAMALAR BİLGİ İÇİNDİR. HİÇ BİR SORUMLULUK KABUL EDİLMEZ</b></td></tr>
+    </table>
+    <br><br>
+    <table class="tablo4">
+        <tr><td><b>ESKİ ASGARİ ÜCRET HESAPLAMALARI</b></td></tr>
+    </table>
+    
+    <br><br>
+    
+    <div style="height: 600px; overflow: scroll; width: 700px;">
+        
+       
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/93359/temmuz-2023-asgari-ucret.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2023 (01/07/2023 - 31/12/2023)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/91441/2023_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2023 (01/01/2023 - 30/06/2023)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/90338/2022-tem.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2022 (01/07/2022 – 31/12/2022)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/89379/2022_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2022 (01/01/2022 - 30/06/2022)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/87829/asgari-ucret-2021.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2021 (01/01/2021 - 31/12/2021)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/64962/2020_onikiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2020 (01/01/2020 - 31/12/2020)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/3278/2019_onikiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2019 (01/01/2019 - 31/12/2019)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1236/2018_onikiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2018 (01/01/2018 - 31/12/2018)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1235/2017_onikiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2017 (01/01/2017 - 31/12/2017)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1234/2016_onikiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2016 (01/01/2016 - 31/12/2016)</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1233/2015_ikincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2015 2. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1232/2015_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2015 1. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1231/2014_ikincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2014 2. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1230/2014_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2014 1. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1229/2013_ikincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2013 2. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1228/2013_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2013 1. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1227/2012_ikincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2012 2. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1226/2012_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2012 1. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1225/2011_ikincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2011 2. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1224/2011_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2011 1. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1223/2010_ikincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2010 2. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1222/2010_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2010 1. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1221/2009_ikincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2009 2. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1220/2009_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2009 1. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1219/2008_ikincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2008 2. Altı Ay</a></td></tr></table>
+    <br>
+    <table class="tablo5"><tr><td><a href="https://www.csgb.gov.tr/media/1218/2008_birincialtiay.pdf" target="_blank">Asgari Ücretin Net Hesabı ve İşverene Maliyeti: 2008 1. Altı Ay</a></td></tr></table>
+    <br>
+     </div>
+
+    </main>
+</div>
+
+<footer>
+
+    <p>Tüm hakları saklıdır. 2024 ©</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Üst, Sol, Orta, Sağ, Alt Yapısı</title>
+
+<style>
+
+ul.ustmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2E3C50;
+    height: 120px;
+    
+}
+
+li a.ustmenu1 {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 53px 25px;
+    text-decoration: none;
+    float: right;
+}
+
+li a:hover:not(.active) {
+
+    background-color: rgb(42, 45, 65);
+    color: white;
+}
+
+
+
+/* Aktif Menü Öğesi Stili */
+li a.active {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+li a.active:hover {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+}
+
+/* Menü Stili */
+.menu1 {
+
+    list-style-type: none;
+    margin: 10px;
+    padding: 20px;
+    width: 230px;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu a {
+
+    text-align: left;
+    text-decoration: none;
+    color: #2E3C50;
+    font-weight: bold;
+    border: 1px solid #d8d8d8;
+    border-style: dotted;
+    display: block;
+    padding: 5px;
+    background: #ffffff;
+    border-left: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header, footer {
+
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+
+    display: flex;
+    height: calc(100% - 160px); /* Sayfa yüksekliğinin %100'ü ve üst ve alt kısımların yüksekliğinin toplamından 160px eksiltiyoruz */
+}
+
+aside, main {
+
+    padding: 20px;
+    box-sizing: border-box; /* Kutuların içerik kutusu dahil tüm alanı kaplamasını sağlar */
+}
+
+aside {
+
+    background-color: #ffffff;
+    width: 400px;
+}
+
+main {
+
+    background-color: #ffffff;
+    width: 740px;
+}
+
+footer {
+
+    position: relative;
+    margin-top: 700px; /* Sayfanın altından yukarı doğru bir mesafe belirleyin */
+    width: 100%;
+    background-color: #2E3C50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+.main-container {
+            max-width: 600px; /* Ana konteynırın maksimum genişliğini ayarlar */
+            display: flex; /* İçerikleri yatay olarak hizalar */
+            align-items: center; /* İçerikleri dikeyde hizalar */
+            position: relative; /* Mutlak konumlandırma için */
+            top: 20px;
+            left: 45px;
+        }
+
+        .image-container {
+            max-width: 100%; /* Resmin maksimum genişliğini ayarlar */
+            position: relative; /* Mutlak konumlandırma için */
+        }
+
+        .logo {
+            width: 100%; /* Resmin genişliğini tamamlar */
+            height: auto; /* Resmin oranını korur */
+        }
+
+        #tcrgazete {
+            position: absolute; /* Mutlak konumlandırma */
+            top: 173px;
+            width: 450px; /* Genişlik 100% */
+            height: 50px; /* Yükseklik ayarı */
+            background-color: rgba(0, 0, 0, 0.53); /* Şeffaf siyah arka plan */
+            color: white; /* Beyaz yazı rengi */
+            text-align: center;
+        }
+
+        .date-table-container {
+            flex-grow: 1; /* Tablo konteynırını genişletir */
+
+        }
+
+        .date-table {
+            width: 150px; /* Tablonun tam genişlikte olmasını sağlar */
+            height: 240px;
+            border-collapse: collapse; /* Tablo hücrelerinin kenarlıklarının birleşmesini sağlar */
+            border-color: #d8d8d8;
+        }
+
+        .date-table th, .date-table td {
+            padding: 0; /* Hücre içeriğine boşluk ekler */
+            text-align: center; /* Hücre içeriğini ortalar */
+            border: 1px solid #d8d8d8; /* Hücre kenarlığı ekler */
+        }
+
+        .date-table a {
+            text-decoration: none; /* Linkin altındaki çizgiyi kaldırır */
+            display: block; /* Linki blok element yapar */
+            color: black;
+        }
+
+#haber{
+    position: relative;
+    left: 70px;
+}
+
+.resim{
+    position: relative;
+    left: 100px;
+    float: left;
+}
+
+</style>
+</head>
+<body>
+
+<header><ul class="ustmenu">  
+    <div class="resim">
+        <img src="resimler/logo.png" alt="">
+                </div>
+                <li><a class="ustmenu1" href="iletisim.html">İLETİŞiM</a></li>  
+                <li><a class="ustmenu1" href="hakkimizda.html">HAKKIMIZDA</a></li> 
+                <li><a class="ustmenu1" href="https://www.sgk.gov.tr/Duyuru" target="_blank">PRATİK BİLGİLER</a></li>  
+                <li><a class="ustmenu1" href="hizmetlerimiz.html">HİZMETLERİMİZ</a></li>
+                <li><a class="ustmenu1" href="giris.html">ANA SAYFA</a></li>
+            </ul>
+      
+      </ul></header>
+
+<div class="container">
+    <aside><ul class="menu">
+			
+        <ul class="menu1">
+        <li><a class="active">ALFABETİK MENÜ</a></li>
+        <li><a href="amortisman.html">Amortismanlar</a></li>
+        <li><a href="asgariücretler.html">Asgeri Ücretler</a></li>
+        <li><a href="bagkur.html">Bağ-Kur</a></li>
+        <li><a href="beyanname.html">Beyanname Süreleri</a></li>
+        <li><a href="dilekceform.html">Dilekçe ve Formlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/portal/login" target="_blank">E-Beyanname</a></li>
+        <li><a href="https://ebildirge.sgk.gov.tr/WPEB/amp/loginldap" target="_blank">E-Bildirge</a></li>
+        <li><a href="hadvemiktar.html">Had ve Miktarlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/" target="_blank">İnternet Vergi Dairesi</a></li>
+        <li><a href="iscilikmaliyetleri.html">İşçilik Maliyetleri</a></li>
+        <li><a href="https://www.gib.gov.tr/gibmevzuat" target="_blank">Kanun ve Mevzuatlar</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/yararli-bilgiler/kdv-oranlari-listesi" target="_blank">KDV Oranları Listesi</a></li>
+        <li><a href="https://www.resmigazete.gov.tr/" target="_blank">Resmi Gazete</a></li>
+        <li><a href="sorgulama.html">Sorgulamalar</a></li>
+        <li><a href="https://www.sgk.gov.tr/" target="_blank">SGK (Sigorta)</a></li>
+        <li><a href="tekdüzen.html">Tek Düzen Hesap Planı</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/vergi-takvimi" target="_blank">Vergi Takvimi</a></li>
+        <li><a href="vergitürü.html">Vergi Türü Kodları</a></li>
+        <li><a href="yillikizinler.html">Yıllık Ücretli İzinler</a></li>
+    </ul>
+</ul></aside>
+
+    <main>
+<div class="main-container">
+        <div class="image-container">
+            <a href="https://www.resmigazete.gov.tr/" target="_blank">
+                <img src="resimler/resmigazete.jpg" alt="Resmi Gazete Logo" class="logo">
+            </a>
+            <p id="tcrgazete">T.C. CUMHURBAŞKANLIĞI RESMİ GAZETE</p>
+        </div>
+        <div class="date-table-container">
+            <table class="date-table">
+                <tbody id="linkTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var table = document.getElementById("linkTable");
+        var currentDate = new Date();
+        
+        for (var i = 0; i < 6; i++) {
+            var row = table.insertRow(-1);
+            var cellDate = row.insertCell(0);
+
+            var pastDate = new Date(currentDate);
+            pastDate.setDate(currentDate.getDate() - i);
+
+            var day = pastDate.getDate();
+            var month = pastDate.getMonth() + 1;
+            var year = pastDate.getFullYear();
+
+            var monthNames = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+            var formattedDate = day + " " + monthNames[month - 1] + " " + year;
+
+            // Link ekleyelim
+            var linkDate = pastDate.toLocaleDateString("tr-TR");
+            var link = "https://www.resmigazete.gov.tr/" + linkDate.replace(/[^0-9]/g, '.');
+            cellDate.innerHTML = "<a href='" + link + "'>" + formattedDate + "</a>";
+        }
+    </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<iframe frameborder="0" scrolling="no" marginwidth="0" marginheight="0"  src="https://smmmsendekatil.com/wp-content/themes/ohaber/sitene-ekle/dikslider.php?kategori3=&sayi3=6" width="100%" height="383" ></iframe>
+<br>
+<br>
+<br>
+<iframe id="haber"   src="https://www.internethaber.com/sitene-ekle/manset_kucuk" frameborder="0" scrolling="no" width="520" height="417"></iframe>
+    </main>
+    <aside>
+
+        <script type="text/javascript">
+            var para_birimleri="USD-EUR-GBP-RUB-CNY-CAD-AUD";
+            var arka_plan="FFFFFF";
+            var cerceve="D6D6D6";
+            var kutucuk="FFFFFF";
+            var piyasa_baslik="D6D6D6";
+            var tur_baslik="000000";
+            var fiyat_baslik="CC3300";
+            var kutu_kose="oval";
+            var genislik="250";
+            var bankalar="kapali";
+            var paylasim="kapali";
+            </script>
+            <div style="width:250px;font-size:12px;text-align:right;"><a name="piyasadoviz" target="_blank"  href="http://www.piyasadoviz.com">döviz bilgisi</a></div><script type="text/javascript" charset="iso-8859-9" src="http://eklenti.piyasadoviz.com/doviz.js"></script>
+<br>
+<br>
+            <script type="text/javascript">
+                var altin_birimleri="GA-C-Y-T-Y14-Y18-Y22";
+                var arka_plan="FFFFFF";
+                var cerceve="D6D6D6";
+                var kutucuk="FFFFFF";
+                var piyasa_baslik="D6D6D6";
+                var tur_baslik="000000";
+                var fiyat_baslik="CC3300";
+                var kutu_kose="oval";
+                var genislik="250";
+                var baglanti="kapali";
+                var paylasim="kapali";
+                </script>
+                <div style="width:250px;font-size:12px;text-align:right;" ><a name="altinpiyasa" target="_blank"  href="http://www.piyasadoviz.com/dovizeklentileri">sitene döviz kurları ekleme</a></div><script type="text/javascript" charset="iso-8859-9" src="http://eklenti.piyasadoviz.com/altin.js"></script>
+
+                
+
+
+    </aside>
+</div>
+
+<footer>
+
+    <p>Tüm hakları saklıdır. 2024 ©</p>
+
+</footer>
+
+</body>
+</html>

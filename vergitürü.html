@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Üst, Sol, Orta, Sağ, Alt Yapısı</title>
+<style>
+
+ul.ustmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2E3C50;
+    height: 120px;
+    
+}
+
+li a.ustmenu1 {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 53px 25px;
+    text-decoration: none;
+    float: right;
+}
+
+li a:hover:not(.active) {
+
+    background-color: rgb(42, 45, 65);
+    color: white;
+}
+
+
+/* Aktif Menü Öğesi Stili */
+li a.active {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+li a.active:hover {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+}
+
+/* Menü Stili */
+.menu1 {
+
+    list-style-type: none;
+    margin: 10px;
+    padding: 20px;
+    width: 230px;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu a {
+
+    text-align: left;
+    text-decoration: none;
+    color: #2E3C50;
+    font-weight: bold;
+    border: 1px solid #d8d8d8;
+    border-style: dotted;
+    display: block;
+    padding: 5px;
+    background: #ffffff;
+    border-left: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header, footer {
+
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+
+    display: flex;
+    height: calc(100% - 160px); /* Sayfa yüksekliğinin %100'ü ve üst ve alt kısımların yüksekliğinin toplamından 160px eksiltiyoruz */
+}
+
+aside, main {
+
+    padding: 20px;
+    box-sizing: border-box; /* Kutuların içerik kutusu dahil tüm alanı kaplamasını sağlar */
+}
+
+aside {
+
+    background-color: #ffffff;
+    width: 400px;
+}
+
+main {
+
+    background-color: #ffffff;
+    width: 740px;
+}
+
+footer {
+
+    position: relative;
+    margin-top: 700px; /* Sayfanın altından yukarı doğru bir mesafe belirleyin */
+    width: 100%;
+    background-color: #2E3C50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.resim{
+    position: relative;
+    left: 100px;
+    float: left;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <ul class="ustmenu">  
+        <div class="resim">
+            <img src="resimler/logo.png" alt="">
+                    </div>
+                    <li><a class="ustmenu1" href="iletisim.html">İLETİŞiM</a></li>  
+                    <li><a class="ustmenu1" href="hakkimizda.html">HAKKIMIZDA</a></li> 
+                    <li><a class="ustmenu1" href="https://www.sgk.gov.tr/Duyuru" target="_blank">PRATİK BİLGİLER</a></li>  
+                    <li><a class="ustmenu1" href="hizmetlerimiz.html">HİZMETLERİMİZ</a></li>
+                    <li><a class="ustmenu1" href="giris.html">ANA SAYFA</a></li>
+          </ul>
+
+</header>
+
+<div class="container">
+    <aside><ul class="menu">
+			
+        <ul class="menu1">
+        <li><a class="active">ALFABETİK MENÜ</a></li>
+        <li><a href="amortisman.html">Amortismanlar</a></li>
+        <li><a href="asgariücretler.html">Asgeri Ücretler</a></li>
+        <li><a href="bagkur.html">Bağ-Kur</a></li>
+        <li><a href="beyanname.html">Beyanname Süreleri</a></li>
+        <li><a href="dilekceform.html">Dilekçe ve Formlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/portal/login" target="_blank">E-Beyanname</a></li>
+        <li><a href="https://ebildirge.sgk.gov.tr/WPEB/amp/loginldap" target="_blank">E-Bildirge</a></li>
+        <li><a href="hadvemiktar.html">Had ve Miktarlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/" target="_blank">İnternet Vergi Dairesi</a></li>
+        <li><a href="iscilikmaliyetleri.html">İşçilik Maliyetleri</a></li>
+        <li><a href="https://www.gib.gov.tr/gibmevzuat" target="_blank">Kanun ve Mevzuatlar</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/yararli-bilgiler/kdv-oranlari-listesi" target="_blank">KDV Oranları Listesi</a></li>
+        <li><a href="https://www.resmigazete.gov.tr/" target="_blank">Resmi Gazete</a></li>
+        <li><a href="sorgulama.html">Sorgulamalar</a></li>
+        <li><a href="https://www.sgk.gov.tr/" target="_blank">SGK (Sigorta)</a></li>
+        <li><a href="tekdüzen.html">Tek Düzen Hesap Planı</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/vergi-takvimi" target="_blank">Vergi Takvimi</a></li>
+        <li><a href="vergitürü.html">Vergi Türü Kodları</a></li>
+        <li><a href="yillikizinler.html">Yıllık Ücretli İzinler</a></li>
+    </ul>
+</ul></aside>
+    <main>
+
+        <div style="height: 900px; overflow: scroll; width: 700px;">
+            <p><b>Vergi Kodu &nbsp;  Vergi Adı</b></p><br>
+            0001 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	YILLIK GELİR VERGİSİ<br>
+            0002 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ZIRAİ KAZANÇ GELİR VERGİSİ<br>
+            0003 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR VERGİSİ S. (MUHTASAR)<br>
+            0004 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR GÖTÜRÜ TİCARİ KAZANÇ<br>
+            0005 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR GÖTÜRÜ SERBEST MESLEK KAZANCI<br>
+            0006 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR GÖTÜRÜ ÜCRET<br>
+            0007 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DAĞITILMAYAN KAR STOPAJI<br>
+            0010 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KURUMLAR VERGİSİ<br>
+            0011 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KURUMLAR VERGİSİ STOPAJI (KVKM24)<br>
+            0012 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR VERGİSİ (GMSI)<br>
+            0014 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	BASIT USULDE TİCARİ KAZANC<br>
+            0015 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GERÇEK USULDE KATMA DEĞER VERGİSİ<br>
+            0017 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GÖTÜRÜ USULDE KATMA DEĞER VERGİSİ<br>
+            0020 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MEP İŞTİRAKÇİSİ KURUMLAR VERGİSİ<br>
+            0021 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	BANKA MUAMELELERİ VERGİSİ<br>
+            0022 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SİGORTA MUAMELELERİ VERGİSİ<br>
+            0027 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR VERGİSİ GEÇİCİ VERGİ<br>
+            0032 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR GEÇİCİ VERGİ<br>
+            0033 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KURUM GEÇİCİ VERGİ<br>
+            0040 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DAMGA VERGİSİ (BEYANNAMELİ DAMGA VERGİSİ MÜKELLEFİ)<br>
+            0046 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	AKARYAKIT TÜKETİM VERGİSİ<br>
+            0048 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR V. M.TALİH OYUNLARI ASGARİ VERGİ<br>
+            0049 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	HER TÜRLÜ İSPİRTOLAR VE FÜZEL YAĞINDAN ALINAN EK VERGİ<br>
+            0050 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KURUMLAR V. M.TALİH OYUNLARI ASGARİ VERGİ<br>
+            0051 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DİĞER ÜCRETLER<br>
+            0053 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KURUMLAR VERGİSİ KURUM GEÇİCİ VERGİ<br>
+            0056 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	OYUN KAĞITLARINDAN ALINAN EK VERGİ<br>
+            0057 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	RÖNTGEN FİLMLERİNDEN ALINAN EK VERGİ<br>
+            0060 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MÜLGA MADEN FONU<br>
+            0061 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KAYNAK KULLANIMI DESTEKLEME FONU KESİNTİSİ<br>
+            0062 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MÜLGA KOOPERATİFÇİLİK TANITMA VE EĞİTİM FONU<br>
+            0067 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	G.V.K. GEÇİCİ 67/11 MADDESİNE GÖRE YAPILAN İHTİYARİ BEYAN<br>
+            0071 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	PETROL VE DOĞALGAZ ÜRÜNLERİNE İLİŞKİN ÖZEL TÜKETİM VERGİSİ<br>
+            0073 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KOLALI GAZOZ, ALKOLLÜ İÇEÇEKLER VE TÜTÜN MAMÜLLERİNE İLİŞKİN ÖZEL TÜKETİM VERGİSİ<br>
+            0074 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DAYANIKLI TÜKETİM VE DİĞER MALLARA İLİŞKİN ÖZEL TÜKETİM VERGİSİ<br>
+            0075 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ALKOLLÜ İÇEÇEKLERE İLİŞKİN ÖZEL TÜKETİM VERGİSİ<br>
+            0076 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TÜTÜN MAMÜLLERİNE İLİŞKİN ÖZEL TÜKETİM VERGİSİ<br>
+            0077 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KOLALI GAZOZLARA İLİŞKİN ÖZEL TÜKETİM VERGİSİ<br>
+            0091 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TÜTÜN MAMÜLLERİNE İLİŞKİN EK VERGİ<br>
+            0092 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	HER TÜRLÜ ALKOLLÜ İÇKİLERE İLİŞKİN EK VERGİ<br>
+            0093 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SAİR ŞARAP VE BİRALARA İLİŞKİN EK VERGİ<br>
+            0094 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	HER TÜRLÜ ALKOLSÜZ İÇECEKLERDEN ALINAN EK VERGİ<br>
+            1013 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EĞİTİM,GENÇLİK,SPOR VE SAĞLIK HİZMETLERİ VERGİSİ<br>
+            1018 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MAHSUPLARDAN KESİLEN DAMGA VERGİSİ<br>
+            1020 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	FON PAYI<br>
+            1026 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5254 SAYILI KANUNA GÖRE MUHTAÇ ÇİFTÇİLERE VERİLEN ÖDÜNÇ TOHUMLUKLARDAN HAZİNE ALACAĞINA DÖNÜŞENLER AİT FAİZ<br>
+            1027 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	2004/5682 SAYILI BKK İLE HAZİNE ALACĞINA DÖNÜŞEN TOHUMLUK KREDİLERİNE DÖNÜŞENLER AİT FAİZ<br>
+            1028 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5335 SAYILI KANUNA GÖRE DESTEKLEME FİYAT İSTİKRAR FONUNA AİT FAİZ<br>
+            1030 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	PİŞMANLIK ZAMMI<br>
+            1037 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; TRAFİK MUAYENESİ PARA CEZALARI<br>
+            1042 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	E.KATKI PAYI<br>
+            1043 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÖZEL İŞLEM VERGİSİ<br>
+            1046 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TEVKİFATTAN ALINAN DAMGA VERGİSİ<br>
+            1047 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DAMGA VERGİSİ<br>
+            1048 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5035 SAYILI KANUNA GÖRE DAMGA VERGİSİ<br>
+            1050 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI TEFE TUTARI<br>
+            1051 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI GEÇ ÖDEME ZAMMI<br>
+            1052 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5335 SAYILI KANUNA GÖRE HAZİNE ALACAĞINA DÖNÜŞEN TOHUMLUK KREDİLERİNE AİT GEÇ ÖDEME ZAMMI<br>
+            1053 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5736 SAYILI KANUN UYARINCA GEÇ ÖDEME ZAMMI<br>
+            1055 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DÜŞÜK OLAN DEĞERLEME TUTARI<br>
+            1067 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ YARGI HARÇLARI<br>
+            1084 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GECİKME FAİZİ<br>
+            1085 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	PARA CEZASI FAİZİ<br>
+            1086 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GECİKME ZAMMI<br>
+            1087 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ERKEN ÖDEME İNDİRİMİ<br>
+            1088 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	PEŞİN ÖDEME İNDİRİMİ<br>
+            1089 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ALINAN DİĞER FAİZLER<br>
+            1090 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KANUNİ FAİZ<br>
+            1091 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5736 SAYILI KANUN UYARINCA ALINAN FAİZ<br>
+            1092 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	HESAPLANAN FA?Z<br>
+            1095 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SAVUNMA SANAYİ DESTEKLEME FONU<br>
+            1096 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KONUT FONU<br>
+            3024 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KAYNAK KULLANIMI DESTEKLEME PRİMİ CEZAİ FAİZİ<br>
+            3061 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	CEZAİ FAİZ(KAYNAK KULLANIMI DESTEKLEME FONU KESİNTİLERİ)<br>
+            3073 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	USULSÜZLÜK CEZASI<br>
+            3074 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÖZEL USULSÜZLÜK CEZASI<br>
+            3076 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KUSUR CEZASI<br>
+            3077 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	AĞIR KUSUR CEZASI<br>
+            3078 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KAÇAKÇILIK CEZASI<br>
+            3080 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ ZİYAI CEZASI<br>
+            3099 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VUK 112/4 Maddesi Gereğince Ödenen Faiz<br>
+            4001 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EK GELİR VERGİSİ<br>
+            4003 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EK ÜCRET GELİR VERGİSİ<br>
+            4004 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EK GÖTÜRÜ TİCARİ KAZANÇ VERGİSİ<br>
+            4005 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EK GÖTÜRÜ SERBEST MESLEK KAZANCI VERGİSİ<br>
+            4006 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	FAİZ VERGİSİ<br>
+            4007 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EK EMLAK VERGİSİ<br>
+            4008 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR DAHİLİ TEVKİFAT<br>
+            4010 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EK KURUMLAR VERGİSİ<br>
+            4011 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KURUMLAR VERGİSİ ARGE HARCAMALARI<br>
+            4012 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KURUM DAHİLİ TEVKİFAT<br>
+            4014 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MÜNFERİT GELİR EKONOMİK DENGE V.<br>
+            4016 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÜCRETLERDEN ALINACAK E.D.V.<br>
+            4021 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4705 Sayılı Kanuna Göre Tahsil Edilen Özel İşlem Vergisi<br>
+            4030 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	G.V.K. GEÇİCİ 67. MADDESİNE GÖRE YAPILAN TEVKİFAT<br>
+            4034 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MOTORLU TAŞITLAR EK VERGİSİ<br>
+            4035 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4837 S.K EK MOTORLU TAŞITLAR VERGİSİ<br>
+            4036 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4962 S. TAŞIT VERGİSİ<br>
+            4037 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TRAFİK MUAYENE ÜCRETİ HAZİNE PAYI<br>
+            4040 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MÜLGA TRAFİK HİZMETLERİNİ GELİŞTİRME FONU REKLAM GELİRLERİ<br>
+            4041 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR VE KURUM EKONOMİK DENGE VERGİSİ<br>
+            4042 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5035 RTÜK EĞİTİME KATKI PAYI<br>
+            4043 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GÖTÜRÜ EKONOMİK DENGE VERGİSİ<br>
+            4044 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR VE KURUM STOPAJ EKONOMİK DENGE VERGİSİ<br>
+            4046 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	Akaryakıt Fiyat İstikrar Payı<br>
+            4047 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TEK BAŞINA ALINABİLEN DAMGA VERGİSİ<br>
+            4048 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ŞANS OYUNLARI VERGİSİ<br>
+            4049 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5035 SAYILI KANUNA GÖRE FİNANSAL FAALİYET HARCI<br>
+            4050 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TEKEL SAFİ HASILAT<br>
+            4060 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TECİLLİ ALACAKLARDAN TAHSİLAT<br>
+            4061 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	İTHALATTA KAYNAK KULLANIMI DESTEKLEME FONU KESİNTİSİ<br>
+            4063 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	NOTER HARÇLARI<br>
+            4070 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	G.V.K. GEÇİCİ 70. MD KAPSAMINDA MUHTASAR V.<br>
+            4072 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MOTORLU TAŞIT ARAÇLARINA İLİŞKİN ÖZEL TÜKETİM VERGİSİ (TESCİLE TABİ OLMAYANLAR)<br>
+            4073 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ERTELENEN GELİR STOPAJ (4325 4.MADDE/4369 GEÇİCİ 5.MADDE)<br>
+            4074 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ERTELENEN GELİR STOPAJ (4747 SAYILI KANUNUNUN 2.MADDESİ)<br>
+            4077 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MÜNFERİT KURUM E. D. V.<br>
+            4078 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	NET AKTİF VERGİSİ<br>
+            4079 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KIYMETLİ MADEN VE ZIYNET EŞYASINDAN ALINAN VERGİ<br>
+            4080 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÖZEL İLETİŞİM VERGİSİ<br>
+            4081 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5035 SAYILI KANUNA GÖRE ÖZEL İLETİŞİM VERGİSİ<br>
+            4101 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI MATRAH ARTIRIMI YILLIK GELİR VERGİSİ<br>
+            4103 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI MATRAH ARTIRIMI GELİR VERGİSİ S. (MUHTASAR)<br>
+            4107 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI MATRAH ARTIRIMI DAĞITILMAYAN KAR STOPAJI<br>
+            4110 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI MATRAH ARTIRIMI KURUMLAR VERGİSİ<br>
+            4112 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI MATRAH ARTIRIMI GELİR VERGİSİ (GMSİ)<br>
+            4114 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI MATRAH ARTIRIMI BASIT USULDE TİCARİ KAZANC<br>
+            4115 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI MATRAH ARTIRIMI GERÇEK USULDE KATMA DEĞER VERGİSİ<br>
+            4121 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI KESİNLEŞEN KAMU ALACAKLARI 2. MADDE 1/AB<br>
+            4122 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI KESİNLEŞEN KAMU ALACAKLARI 2. MADDE 1/C<br>
+            4123 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI KESİNLEŞEN KAMU ALACAKLARI 2. MADDE/6 MTV<br>
+            4124 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI KESİNLEŞMEYEN KAMU ALACAKLARI 3. MADDE<br>
+            4125 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI İNCELEME VE TARHİYAT 5.MADDE<br>
+            4126 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI PİŞMANLIK 6.MADDE 1/AB<br>
+            4127 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI PİŞMANLIK 6.MADDE 1/DİĞER HÜKÜMLER<br>
+            4128 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI ECRİMİSİL 15.MADDE<br>
+            4130 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERGİ BARIŞI KIYMETLİ MADEN VE ZİYNET EŞYASI BEYANI<br>
+            4140 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	6183 B/4 TAHSİLAT GENEL TEBLİĞİ TAHSİLATI<br>
+            5015 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	E-BEYANNAME B FORMU<br>
+            5030 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	G.V.K. GEÇİCİ 67. MADDESİNE GÖRE YAPILAN TEVKİFAT EK2 EK3<br>
+            5569 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5569 SAYILI KANUN UYARINCA KOBİ TECİLLİ TAHSİLAT<br>
+            9000 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	İDARİ PARA CEZASI (4703 SK)<br>
+            9001 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EMANETEN YAPILAN TAHSİLAT<br>
+            9002 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	NÜFUS PARA CEZASI<br>
+            9003 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SEÇİM PARA CEZASI<br>
+            9004 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ASKERLİK PARA CEZASI<br>
+            9005 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ADLİ MAHKEME PARA CEZASI<br>
+            9006 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	1475 SAYILI İÇ KANUNUNA BA¦LI PARA CEZASI<br>
+            9007 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	3516 SAYILI KANUNA GÖRE ÖLÇÜ AYAR PARA CEZASI<br>
+            9008 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TRAFİK ZABITASI TESPİTİNE DAYALI ÖZEL USULSÜZLÜK CEZASI<br>
+            9009 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TURİZM PARA CEZASI<br>
+            9010 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TÜKETİCİYİ KORUMA KANUNUNA GÖRE KESİLEN PARA CEZASI<br>
+            9011 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÇEVRE KİRLİLİĞİ PARA CEZASI<br>
+            9012 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ESNAF S.HARÇ<br>
+            9013 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GÜMRÜK VERGİSİ<br>
+            9014 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	Yurt Dışı Çıkış Harcı<br>
+            9015 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KATMA DEĞER VERGİSİ TEVKİFATI<br>
+            9016 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	BİLİRKİŞİ ÜCRETİ<br>
+            9017 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TÜRK ULUSLARARASI GEMİ SİCİL KAYIT HARCI<br>
+            9018 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	YILLIK TONAJ HARCI<br>
+            9019 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ELEKTRİK PİYASASI KANUNU PARA CEZASI<br>
+            9020 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MÜKELLEFLERİN VERGİ BORCUNA MAHSUBEN YAPILAN TEVKİFATLAR<br>
+            9021 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4961 BANKA SİGORTA MUAMELELERİ VERGİSİ<br>
+            9022 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KUR FARKI HESABI<br>
+            9023 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	YÜKSEK ÖĞRENİM KREDİ BORCU HESABI<br>
+            9024 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KAYNAK KULLANIMI DESTEKLEME PRİMİ HESABI<br>
+            9025 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	İHRACATTA VERGİ İADESİ HESABI<br>
+            9026 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİŞTİRME VE DESTEKLEME FONU HESABI<br>
+            9027 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÇALIŞMA İZİN HARCI<br>
+            9028 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DESTEKLEME VE FİYAT İSTİKRAR FONU HESABI<br>
+            9029 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DİPLOMA HARCI<br>
+            9030 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EK MOTORLU TAŞITLAR VERGİSİ<br>
+            9031 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERASET VE İNTİKAL VERGİSİ<br>
+            9032 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EK TAŞIT ALIM VERGİSİ<br>
+            9033 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TADPK İDARİ PARA CEZASI<br>
+            9034 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MOTORLU TAŞITLAR VERGİSİ<br>
+            9035 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TAŞIT ALIM VERGİSİ<br>
+            9036 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	YİYECEK BEDELLERİ<br>
+            9037 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TEMİNAT O. YAPILAN THS.<br>
+            9038 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	İADELERDEN ALACAKLILAR<br>
+            9039 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	HESAP KART VE DEFTERLERİNE İŞLENMEYEN TAHSİLATLAR<br>
+            9040 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MERA FONU<br>
+            9041 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MERA FONU PARA CEZASI<br>
+            9042 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MÜLGA TRAFİK HİZMETLERİNİ GELİŞTİRME FONU TİCARİ PLAKA GELİRLERİ<br>
+            9043 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MÜLGA YATIRIM TEŞVİK FONU<br>
+            9044 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4961 S.K. GEÇİCİ 2. MAD. 3.FIKRASINA GÖRE TAHSILAT<br>
+            9045 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TAHSİLATI HIZLANDIRMA TEBLİĞİNE GÖRE VERİLEN TAHAKKUK<br>
+            9046 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÖZEL HESAP GELİRLERİ<br>
+            9047 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TEK BAŞINA ALINABİLEN DAMGA VERGİSİ<br>
+            9048 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5035 SAYILI KANUNA GÖRE HARÇ<br>
+            9049 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4749 KAMU FINANS BORC YÖN. DÜZEN. HAK. KANUN HAZİNE ALACAKLARI<br>
+            9050 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KARAYOLLARI TAŞIMA KANUNU İDARİ PARA CEZASI<br>
+            9051 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DIŞ SEYAHAT HARCAMALARI VERGİSİ<br>
+            9052 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TAŞINMAZ MALLAR SATIŞ GELİRLERİ<br>
+            9053 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ECRİMİSİL GELİRLERİ<br>
+            9054 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DİĞER TAŞINMAZ MALLAR İDARE GELİRLERİ<br>
+            9055 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TAŞINIR MALLAR SATIŞ GELİRLERİ<br>
+            9056 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DOGALGAZ PİYASASI KANUNU PARA CEZASI<br>
+            9057 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DOĞRUDAN GELİR DESTEĞİ ÖDEMELERİ<br>
+            9058 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	PETROLDEN DEVLET HAKKI<br>
+            9059 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TİCARET SİCİL HARCI<br>
+            9060 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MADENLERDEN DEVLET HAKKI<br>
+            9061 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	OYUN KAĞIDI GELİRLERİ<br>
+            9062 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TAPU HARÇLARI<br>
+            9063 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	YENİDEN İNŞA OLUNACAK BİNA VESAİR TESİSLERİ TESCİL HARCI<br>
+            9064 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	PASAPORT VE KONSOLOSLUK HARÇLARI<br>
+            9065 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TRAFİK HARÇLARI<br>
+            9066 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	YARGI HARÇLARI<br>
+            9067 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	İTHAL VE İMAL RUHSAT VE TEMDİT ÜCRETİ<br>
+            9068 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GEMİ VE LİMAN HARÇLARI<br>
+            9069 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DİĞER HARÇLAR<br>
+            9070 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DEĞERLİ KAĞITLAR GELİRLERİ<br>
+            9071 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TAVİZLERDEN GERİ ALINANLAR<br>
+            9072 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	İKRAZLARDAN GERİ ALINANLAR<br>
+            9073 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	YEM ANALİZ ÜCRETİ<br>
+            9074 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ŞEKER FİYAT FARKI<br>
+            9075 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	AKARYAKIT FİYAT FARKI<br>
+            9076 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	BAŞKA MUHASEBE BİRİMİ ADINA YAPILAN TAHSİLAT<br>
+            9077 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MOTORLU TAŞIT ARAÇLARINA İLİŞKİN ÖZEL TÜKETİM VERGİSİ (TESCİLE TABİ OLANLAR)<br>
+            9078 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GÜBRE DENEY VE ANALİZ ÜCRETİ<br>
+            9079 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4961 S.K. GEÇİCİ 1. MAD. GÖRE PARA CEZASI<br>
+            9080 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DİĞER PARA CEZALARI<br>
+            9081 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ZİMMETLERE GEÇİRİLEN PARA VE DEĞERLERDEN BORÇLULAR<br>
+            9082 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	FAZLA VE YERSİZ YAPILAN ÖDEMELERDEN BORÇLULAR<br>
+            9083 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SOSYAL DAYANIŞMA VE YARDIMLAŞMAYI TEŞVİK FONU<br>
+            9084 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	İSTİHSAL VERGİSİ<br>
+            9085 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TRAFİK CEZALARI<br>
+            9086 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	HESAPLANAN GECİKME ZAMMI<br>
+            9087 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TAKİP GİDERLERİ KARŞILIĞI ALINAN<br>
+            9088 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÇIRAKLIK FONU<br>
+            9089 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	2000/2 SAYILI BKK GEREĞİNCE YATIRIMLARI TEŞVİK FONUNA AKTIRILACAK TUTARLAR<br>
+            9090 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÇEŞİTLİ GELİRLER<br>
+            9091 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	PETROLDEN DEVLET HİSSESİ<br>
+            9092 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	YÜKSEK ÖĞRENİM HARÇ KREDİSİ<br>
+            9093 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	RESMİ ARABULUCULUK ÜCRETİ<br>
+            9094 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EM.SAN. 17 MAD. GELİRLERİN THK EDİLMEMESİ CEZASI<br>
+            9095 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4961 S.K. GEÇİCİ 2. MAD. 1.FIKRAYA GÖRE TAHSİLAT<br>
+            9096 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4369/15 SUÇA İŞTİRAK EDEN KİŞİLER<br>
+            9097 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	HAKSIZ ALINAN VERGİ İADESİ<br>
+            9098 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	HAKSIZ ALINAN VERGİ İADESİ CEZASI<br>
+            9099 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KALDIRILAN VERGİ ARTIKLARI<br>
+            9101 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ŞEKER KANUNU İDARİ PARA CEZASI<br>
+            9102 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GEÇİŞ ÜÇRETİ VE İDARİ PARA CEZASI<br>
+            9103 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5188 SK. GÖRE GÜVENLİK RUHSATI HARCI<br>
+            9104 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TELGRAF VE TELEFON KANUNU 2. MADDE İDARİ PARA CEZASI<br>
+            9105 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SPOR MÜSABAKALRINDA ŞİDDET VE DÜZENSİZLİĞİN ÖNLENMESİ KAN. UYARINCA İPC<br>
+            9106 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4857 S.K. 101. MAD. KAP. İDARİ PARA CEZALARI<br>
+            9107 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ENERJİ DESTEĞİ ÖDEMELERİNDEN GERİ ALINANLAR<br>
+            9108 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4857 SAYILI KANUNA GÖRE GELİR KAYDEDİLECEK PARA CEZALARI<br>
+            9109 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5326 S. KABAHATLER KANUNU İDARİ PARA CEZASI<br>
+            9110 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	93/4000 SAYILI YATIRIMLARIN, DÖVİZ. KAZ. HİZ. TEŞVİKİNE İLİŞKİN B.K.K.`NCA HAKSIZ ÖDENEN ENERJİ TEŞVİK GERİ ÖDEMESİ<br>
+            9111 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ORKÖY FONU GELİRLERİ<br>
+            9112 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	2762 SAYILI KANUNA GÖRE ALINAN TAVİZ BEDELİ<br>
+            9113 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GELİR VERGİSİ TEVKİFATI<br>
+            9114 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	YABANCI ÜLKEDE GÜÇ VE MUHTAÇ DURUMA DÜŞENLERE YURDA DÖNÜŞ İÇİN ÖDÜNÇ VERİLEN PARALAR<br>
+            9115 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SORUMLU SIFATIYLA VERİLEN KDV.<br>
+            9116 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	HAZİNE ZARARININ GERİ ALINMASI<br>
+            9117 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	EVRENSEL HİZMETİN GELİRLERİ KATKI PAYI<br>
+            9118 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TELEKOMİNİKASYON KURUMU TARAFINDAN YATIRILAN TELGRAF VE TELEFON KANUNU İDARİ PARA CEZALARI<br>
+            9119 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SİVİL HAVA ARAÇLARI ÜÇÜNCÜ ŞAHIS MALİ MESULİYET DEVLET GARANTİSİ BEDELİ<br>
+            9120 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TELSİZ, TELEFON VE TELGRAF KANUNU İDARİ PARA CEZASI %20 Sİ<br>
+            9121 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5015 SAYILI PETROL PİYASASI KANUNU İPC<br>
+            9122 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5307 SAYILI SIVILAŞTIRILMIŞ PETROL GAZLARI PİYASASI KANUNU İPC<br>
+            9123 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ENERJİ PİYASASI DÜZENLEME KURULUNCA ÖDENEN ANALİZ ÜCRETİNİN GERİ ALINMASI<br>
+            9124 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KİŞİLERDEN ALACAK FAİZLERİ<br>
+            9125 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	AĞAÇLANDIRMA FONU YÖNETMELİĞİNE GÖRE VERİLEN KREDİLERDEN GERİ ALINANLAR<br>
+            9126 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5254 SAYILI KANUNA GÖRE MUHTAÇ ÇİFTÇİLERE VERİLEN ÖDÜNÇ TOHUMLUKLARDAN HAZİNE ALACAĞINA DÖNÜŞENLER<br>
+            9127 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	2004/5682 SAYILI BKK İLE HAZİNE ALACĞINA DÖNÜŞEN TOHUMLUK KREDİLERİ<br>
+            9128 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4447 SAYILI İŞSİZLİK SİGORTASI KANUNU UYARINCA KESİLEN İ.P.C<br>
+            9129 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4904 SAYILI İŞ KURUMU KANUNU UYARINCA KESİLEN İ.P.C.<br>
+            9131 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	VERASET VE İNTİKAL VERGİSİ (SAİR İVAZSIZ İNTİKALLER)<br>
+            9132 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KLAVUZLUK VE ROMÖRKÖRCÜLÜK HİZMET PAYI<br>
+            9133 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MAHALLİ İDARELERDEN ALINAN PAYLAR<br>
+            9148 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4915 ve 5035 SK. GÖRE RUHSAT HARCI<br>
+            9149 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KİRLETİLEN ÇEVRENİNİYİLEŞTİRİLMESİ İÇİNGENEL BÜTÇE KAPS.İD.YAPILAN HARCAMALARIN TAHSİLATI<br>
+            9153 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5736 SAYILI KANUN UYARINCA TAHSİL EDİLECEK ECRİMİSİL GELİRLERİ<br>
+            9160 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MADENLERDEN ALINAN DEVLET HAKKINDAN %50 ?L ™ZEL ?DARE PAYI<br>
+            9161 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MADENLERDEN ALINAN DEVLET HAKKININ %30 FAZLALARI(ORMAN GENEL MšDšRLš?š PAYI)<br>
+            9162 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KADASTRO HARÇLARI<br>
+            9166 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	KARAR VE İLAM HARCI<br>
+            9171 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SORUMLU SIFATIYLA VERİLEN ÖTV 1. LİSTE<br>
+            9180 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TELSİZ, TELEFON VE TELGRAF KANUNU İDARİ PARA CEZASI %80 İ<br>
+            9190 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ÇEŞİTLİ GELİRLER(GECİKME ZAMMI HESAPLANAN)<br>
+            9200 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DSİ SULAMA TESİSLERİ İŞLETME VE BAKIM ÜCRETİ<br>
+            9201 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	DSİ SULAMA TESİSLERİ YATIRIM BEDELİ<br>
+            9301 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	GENEL BÜTÇE DIŞINDA KALAN KURUMLAR TARAFINDAN YAPILAN İ.P.C<br>
+            9304 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TELGRAF VE TELEFON KANUNU 2.MADDE İDARİ PARA CEZASI<br>
+            9305 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	SPOR MÜSABAKALARINDA ŞİDDET VE DÜZENSİZLİĞİN ÖNLENMESİ KANUNU UYARINCA İPC<br>
+            9306 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	1475 SAYILI İŞ KANUNUNA BAĞLI PARA CEZASI<br>
+            9307 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	3516 SAYILI KANUNA GÖRE ÖLÇÜ AYAR PARA CEZASI<br>
+            9309 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TURİZM PARA CEZASI<br>
+            9310 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5549 SAYILI SUÇ GELİRLERİNİN AKLANMASININ ÖNLENMESİ İ.P.C<br>
+            9311 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	TÜTÜN MAMULLERİNİN ZARARLARININ ÖNLENMESİNE DAİR KANUN UYARINCA AL.İ.P.C(4207 S.K.)<br>
+            9315 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ŞEKER KANUNU İDARİ PARA CEZASI<br>
+            9316 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	4054 SAYILI REKABET KANUNUNUN 55. MADDE KAPSAMINDA İPC<br>
+            9317 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5326 SAYILI KANUN UYARINCA CUMHURİYET SAVCILIKLARINCA VERİLEN İ.P.C.<br>
+            9318 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	5326 SAYILI KANUN UYARINCA MAHKEMELER TARAFINDAN VERİLEN İ.P.C.<br>
+            9341 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	MERA FONU PARA CEZASI<br>
+            9901 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	ADİ ORTAKLIK MÜKELLEFİYETSİZ MÜKELLEF KAYDI İÇİN VERGİ KODU<br>
+            
+            </div>
+
+    </main>
+</div>
+
+<footer>
+
+    <p>Tüm hakları saklıdır. 2024 ©</p>
+
+</footer>
+
+</body>
+</html>

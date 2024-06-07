@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Üst, Sol, Orta, Sağ, Alt Yapısı</title>
+<style>
+
+.kırmızı{
+    color: red;
+ }
+
+table, th, td {
+  border: 4px solid black;
+  border-collapse: collapse;
+  height: 40px;
+}
+
+article {
+  float: left;
+  padding: 30px 100px;
+  width: 70%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+ul.ustmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2E3C50;
+    height: 120px;
+    
+}
+
+li a.ustmenu1 {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 53px 25px;
+    text-decoration: none;
+    float: right;
+}
+
+li a:hover:not(.active) {
+
+    background-color: rgb(42, 45, 65);
+    color: white;
+}
+
+
+
+/* Aktif Menü Öğesi Stili */
+li a.active {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+li a.active:hover {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+}
+
+/* Menü Stili */
+.menu1 {
+
+    list-style-type: none;
+    margin: 10px;
+    padding: 20px;
+    width: 230px;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu a {
+
+    text-align: left;
+    text-decoration: none;
+    color: #2E3C50;
+    font-weight: bold;
+    border: 1px solid #d8d8d8;
+    border-style: dotted;
+    display: block;
+    padding: 5px;
+    background: #ffffff;
+    border-left: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header, footer {
+
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+
+    display: flex;
+    height: calc(100% - 160px); /* Sayfa yüksekliğinin %100'ü ve üst ve alt kısımların yüksekliğinin toplamından 160px eksiltiyoruz */
+}
+
+aside, main {
+
+    padding: 20px;
+    box-sizing: border-box; /* Kutuların içerik kutusu dahil tüm alanı kaplamasını sağlar */
+}
+
+aside {
+
+    background-color: #ffffff;
+    width: 400px;
+}
+
+main {
+
+    background-color: #ffffff;
+    width: 740px;
+}
+
+footer {
+
+    position: relative;
+    margin-top: 750px; /* Sayfanın altından yukarı doğru bir mesafe belirleyin */
+    width: 100%;
+    background-color: #2E3C50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.resim{
+    position: relative;
+    left: 100px;
+    float: left;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <ul class="ustmenu">  
+        <div class="resim">
+            <img src="resimler/logo.png" alt="">
+                    </div>
+                    <li><a class="ustmenu1" href="iletisim.html">İLETİŞiM</a></li>  
+                    <li><a class="ustmenu1" href="hakkimizda.html">HAKKIMIZDA</a></li> 
+                    <li><a class="ustmenu1" href="https://www.sgk.gov.tr/Duyuru" target="_blank">PRATİK BİLGİLER</a></li>  
+                    <li><a class="ustmenu1" href="hizmetlerimiz.html">HİZMETLERİMİZ</a></li>
+                    <li><a class="ustmenu1" href="giris.html">ANA SAYFA</a></li>      
+          </ul>
+
+</header>
+
+<div class="container">
+    <aside><ul class="menu">
+			
+        <ul class="menu1">
+        <li><a class="active">ALFABETİK MENÜ</a></li>
+        <li><a href="amortisman.html">Amortismanlar</a></li>
+        <li><a href="asgariücretler.html">Asgeri Ücretler</a></li>
+        <li><a href="bagkur.html">Bağ-Kur</a></li>
+        <li><a href="beyanname.html">Beyanname Süreleri</a></li>
+        <li><a href="dilekceform.html">Dilekçe ve Formlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/portal/login" target="_blank">E-Beyanname</a></li>
+        <li><a href="https://ebildirge.sgk.gov.tr/WPEB/amp/loginldap" target="_blank">E-Bildirge</a></li>
+        <li><a href="hadvemiktar.html">Had ve Miktarlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/" target="_blank">İnternet Vergi Dairesi</a></li>
+        <li><a href="iscilikmaliyetleri.html">İşçilik Maliyetleri</a></li>
+        <li><a href="https://www.gib.gov.tr/gibmevzuat" target="_blank">Kanun ve Mevzuatlar</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/yararli-bilgiler/kdv-oranlari-listesi" target="_blank">KDV Oranları Listesi</a></li>
+        <li><a href="https://www.resmigazete.gov.tr/" target="_blank">Resmi Gazete</a></li>
+        <li><a href="sorgulama.html">Sorgulamalar</a></li>
+        <li><a href="https://www.sgk.gov.tr/" target="_blank">SGK (Sigorta)</a></li>
+        <li><a href="tekdüzen.html">Tek Düzen Hesap Planı</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/vergi-takvimi" target="_blank">Vergi Takvimi</a></li>
+        <li><a href="vergitürü.html">Vergi Türü Kodları</a></li>
+        <li><a href="yillikizinler.html">Yıllık Ücretli İzinler</a></li>
+    </ul>
+</ul></aside>
+    <main>
+        
+        <article>
+        <table style="width: 500px;">
+        <colgroup>
+          <col span="2" style="background-color: #ffffff">
+        </colgroup>
+        <th colspan="2" bgcolor="white"  ><p class="kırmızı">EK BİLGİ: <a href="https://www.gib.gov.tr/fileadmin/user_upload/Yararli_Bilgiler/amortisman_oranlari.htm" target="_blank"> Oranları İçin Tıklayınız</a></p></th>
+        <tr>
+        <th colspan="2" bgcolor="white" >DOĞRUDAN GİDER YAZILACAK DEMİRBAŞ VE PEŞTEMALLIKLAR</th>
+        <tr><td>Yıllar</td><td>İsnista Tutarları</td><tr>
+        <tr><td>2023</td><td>4.400 TL</td><tr>
+        <tr><td>2022</td><td>2.000 TL</td><tr>
+        <tr><td>2021</td><td>1.500 TL</td><tr>
+        <tr><td>2020</td><td>1.400 TL</td><tr>
+        <tr><td>2019</td><td>1.200 TL</td><tr>
+        <tr><td>2018</td><td>1.000 TL</td><tr>
+        <tr><td>2017</td><td>900 TL</td><tr>
+        <tr><td>2016</td><td>900 TL</td><tr>
+        <tr><td>2015</td><td>880 TL</td><tr>
+        <tr><td>2014</td><td>800 TL</td><tr>
+        <tr><td>2013</td><td>800 TL</td><tr>
+        <tr><td>2012</td><td>770 TL</td><tr>
+        <tr><td>2011</td><td>700 TL</td><tr>
+        <tr><td>2010</td><td>680 TL</td><tr>
+        <tr><td>2009</td><td>670 TL</td><tr>
+        <tr><td>2008</td><td>600 YTL</td><tr>
+        <tr><td>2007</td><td>560 YTL</td><tr>
+        <tr><td>2006</td><td>520 YTL</td><tr>
+        <tr><td>2005</td><td>480 YTL</td><tr>
+        <tr><td>2004</td><td>440.000.000 TL</td><tr>
+        <tr><td>2003</td><td>350.000.000 TL</td><tr>
+        <tr><td>2002</td><td>250.000.000 TL</td><tr>
+        <tr><td>2001</td><td>150.000.000 TL</td><tr>
+        <tr><td>2000</td><td>76.000.000 TL</td><tr>
+        </table>
+    </article>
+    </main>
+
+</div>
+
+<footer>
+
+    <p>Tüm hakları saklıdır. 2024 ©</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Üst, Sol, Orta, Sağ, Alt Yapısı</title>
+<style>
+
+ul.ustmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2E3C50;
+    height: 120px;
+    
+}
+
+li a.ustmenu1 {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 53px 25px;
+    text-decoration: none;
+    float: right;
+}
+
+li a:hover:not(.active) {
+
+    background-color: rgb(42, 45, 65);
+    color: white;
+}
+
+
+/* Aktif Menü Öğesi Stili */
+li a.active {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+li a.active:hover {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+}
+
+/* Menü Stili */
+.menu1 {
+
+    list-style-type: none;
+    margin: 10px;
+    padding: 20px;
+    width: 230px;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu a {
+
+    text-align: left;
+    text-decoration: none;
+    color: #2E3C50;
+    font-weight: bold;
+    border: 1px solid #d8d8d8;
+    border-style: dotted;
+    display: block;
+    padding: 5px;
+    background: #ffffff;
+    border-left: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header, footer {
+
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+
+    display: flex;
+    height: calc(100% - 160px); /* Sayfa yüksekliğinin %100'ü ve üst ve alt kısımların yüksekliğinin toplamından 160px eksiltiyoruz */
+}
+
+aside, main {
+
+    padding: 20px;
+    box-sizing: border-box; /* Kutuların içerik kutusu dahil tüm alanı kaplamasını sağlar */
+}
+
+aside {
+
+    background-color: #ffffff;
+    width: 400px;
+}
+
+main {
+
+    background-color: #ffffff;
+    width: 740px;
+}
+
+footer {
+
+    position: relative;
+    margin-top: 700px; /* Sayfanın altından yukarı doğru bir mesafe belirleyin */
+    width: 100%;
+    background-color: #2E3C50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.resim{
+    position: relative;
+    left: 100px;
+    float: left;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <ul class="ustmenu">  
+        <div class="resim">
+            <img src="resimler/logo.png" alt="">
+                    </div>
+                    <li><a class="ustmenu1" href="iletisim.html">İLETİŞiM</a></li>  
+                    <li><a class="ustmenu1" href="hakkimizda.html">HAKKIMIZDA</a></li> 
+                    <li><a class="ustmenu1" href="https://www.sgk.gov.tr/Duyuru" target="_blank">PRATİK BİLGİLER</a></li>  
+                    <li><a class="ustmenu1" href="hizmetlerimiz.html">HİZMETLERİMİZ</a></li>
+                    <li><a class="ustmenu1" href="giris.html">ANA SAYFA</a></li>
+          </ul>
+
+</header>
+
+<div class="container">
+    <aside><ul class="menu">
+			
+        <ul class="menu1">
+        <li><a class="active">ALFABETİK MENÜ</a></li>
+        <li><a href="amortisman.html">Amortismanlar</a></li>
+        <li><a href="asgariücretler.html">Asgeri Ücretler</a></li>
+        <li><a href="bagkur.html">Bağ-Kur</a></li>
+        <li><a href="beyanname.html">Beyanname Süreleri</a></li>
+        <li><a href="dilekceform.html">Dilekçe ve Formlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/portal/login" target="_blank">E-Beyanname</a></li>
+        <li><a href="https://ebildirge.sgk.gov.tr/WPEB/amp/loginldap" target="_blank">E-Bildirge</a></li>
+        <li><a href="hadvemiktar.html">Had ve Miktarlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/" target="_blank">İnternet Vergi Dairesi</a></li>
+        <li><a href="iscilikmaliyetleri.html">İşçilik Maliyetleri</a></li>
+        <li><a href="https://www.gib.gov.tr/gibmevzuat" target="_blank">Kanun ve Mevzuatlar</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/yararli-bilgiler/kdv-oranlari-listesi" target="_blank">KDV Oranları Listesi</a></li>
+        <li><a href="https://www.resmigazete.gov.tr/" target="_blank">Resmi Gazete</a></li>
+        <li><a href="sorgulama.html">Sorgulamalar</a></li>
+        <li><a href="https://www.sgk.gov.tr/" target="_blank">SGK (Sigorta)</a></li>
+        <li><a href="tekdüzen.html">Tek Düzen Hesap Planı</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/vergi-takvimi" target="_blank">Vergi Takvimi</a></li>
+        <li><a href="vergitürü.html">Vergi Türü Kodları</a></li>
+        <li><a href="yillikizinler.html">Yıllık Ücretli İzinler</a></li>
+    </ul>
+</ul></aside>
+    <main>
+
+        <div style="height: 1000px; overflow: scroll; width: 700px;">
+            <p style="color: brown;"><b>Tek Düzen Hesap Planı, Muhasebe Hesap Kodları</b></p>
+            <p><b>1. DÖNEN VARLIKLAR</b></p>
+            <p><b>10. Hazır Değerler</b></p>
+            <p>100. Kasa <br>
+                101. Alınan Çekler<br>
+                102. Bankalar<br>
+                103. Verilen Çekler Ve Ödeme Emirleri(-)<br>
+                108. Diğer Hazır Değerler</p>
+                <p><b>11. Menkul Kıymetler</b></p>
+                <p>110. Hisse Senetleri
+                    111. Özel Kesim Tahvil Senet Ve Bonoları<br>
+                    112. Kamu Kesimi Tahvil, Senet Ve Bonoları<br>
+                    118. Diğer Menkul Kıymetler<br>
+                    119. Menkul Kıymetler Değer Düşüklüğü Karşılığı(-)</p>
+                    <p><b>12. Ticari Alacaklar</b></p>
+                    <p>120. Alıcılar<br>
+                        121. Alacak Senetleri<br>
+                        122. Alacak Senetleri Reeskontu(-)<br>
+                        126. Verilen Depozito Ve Teminatlar<br>
+                        127. Diğer Ticari Alacaklar<br>
+                        128. Şüpheli Ticari Alacaklar<br>
+                        129. Şüpheli Ticari Alacaklar Karşılığı(-)</p>
+                        <p><b>13. Diğer Alacaklar</b></p>
+                        <p>131. Ortaklardan Alacaklar<br>
+                            132. İştiraklerden Alacaklar<br>
+                            133. Bağlı Ortaklıklardan Alacaklar<br>
+                            135. Personelden Alacaklar<br>
+                            136. Diğer Çeşitli Alacaklar<br>
+                            137. Diğer Alacak Senetleri Reeskontu(-)<br>
+                            138. Şüpheli Diğer Alacaklar<br>
+                            139. Şüpheli Diğer Alacaklar Karşılığı(-)</p>
+                            <p><b>15. Stoklar</b></p>
+                            <p>150. İlk Madde Malzeme<br>
+                            151. Yarı Mamuller<br>
+                            152. Mamuller<br>
+                            153. Ticari Mallar<br>
+                            157. Diğer Stoklar<br>
+                            158. Stok Değer Düşüklüğü Karşılığı(-)<br>
+                            159. Verilen Sipariş Avansları</p>
+                            <p><b>17. Yıllara Yaygın İnşaat Ve Onarım Maliyetleri</b></p>
+                            170. Yıllara Yaygın İnşaat Ve Onarım Maliyetleri<br>
+                            179. Taşeronlara Verilen Avanslar<br>
+                            <p><b>18. Gelecek Aylara Ait Giderler Ve Gelir Tahakkukları</b></p>
+                            <p>180. Gelecek Aylara Ait Giderler<br>
+                            181. Gelir Tahakkukları</p>
+                            <p><b>19. Diğer Dönen Varlıklar</b></p>
+                            <p>190. Devreden Kdv<br>
+                                191. İndirilecek Kdv<br>
+                                192. Diğer Kdv<br>
+                                193. Peşin Ödenen Vergiler Ve Fonlar<br>
+                                195. İş Avansları<br>
+                                196. Personel Avansları<br>
+                                197. Sayım Ve Tesellüm Noksanları<br>
+                                198. Diğer Çeşitli Dönen Varlıklar<br>
+                                199. Diğer Dönen Varlıklar Karşılığı(-)</p>
+                                <p><b>2. DURAN VARLIKLAR</b></p>
+                                <p><b>22. Ticari Alacaklar</b></p>
+                                <p>220. Alıcılar<br>
+                                    221. Alacak Senetleri<br>
+                                    222. Alacak Senetleri Reeskontu(-)<br>
+                                    226. Verilen Depozito Ve Teminatlar<br>
+                                    229. Şüpheli Ticari Alacaklar Karşılığı(-)</p>
+                                    <p><b>23. Diğer Alacaklar</b></p>
+                                    <p>231. Ortaklardan Alacaklar<br>
+                                        232. İştiraklerden Alacaklar<br>
+                                        233. Bağlı Ortaklıklardan Alacaklar<br>
+                                        235. Personelden Alacaklar<br>
+                                        236. Diğer Çeşitli Alacaklar<br>
+                                        237. Diğer Alacak Senetleri Reeskontu(-)<br>
+                                        239. Şüpheli Diğer Alacaklar Karşılığı(-)</p><br>
+                                        <p><b>24. Mali Duran Varlıklar</b></p>
+                                        <p>240. Bağlı Menkul Kıymetler<br>
+                                            241. Bağlı Menkul Kıymetler Değer Düşüklüğü Karşılığı(-)<br>
+                                            242. İştirakler<br>
+                                            243. İştiraklere Sermaye Taahhütleri(-)<br>
+                                            244. İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı(-)<br>
+                                            245. Bağlı Ortaklıklar<br>
+                                            246. Bağlı Ortaklıklara Sermaye Taahhütleri(-)<br>
+                                            247. Bağlı Ortaklıklar Sermaye Payları Değer Düşüklüğü Karşılığı(-)<br>
+                                            248. Diğer Mali Duran Varlıklar<br>
+                                            249. Diğer Mali Duran Varlıklar Karşılığı(-)</p><br>
+                                            <p><b>25. Maddi Duran Varlıklar</b></p>
+                                            <p>250. Arazi Ve Arsalar<br>
+                                                251. Yer Altı Ve Yer Üstü Düzenleri<br>
+                                                252. Binalar<br>
+                                                253. Tesis, Makine Ve Cihazlar<br>
+                                                254. Taşıtlar<br>
+                                                255. Demirbaşlar<br>
+                                                256. Diğer Maddi Duran Varlıklar<br>
+                                                257. Birikmiş Amortismanlar(-)<br>
+                                                258. Yapılmakta Olan Yatırımlar<br>
+                                                259. Verilen Avanslar</p>
+                                                <p><b>26. Maddi Olmayan Duran Varlıklar</b></p>
+                                                <p>260. Haklar<br>
+                                                    261. Şerefiye<br>
+                                                    262. Kuruluş Ve Örgütlenme Giderleri<br>
+                                                    263. Araştırma Ve Geliştirme Giderleri<br>
+                                                    264. Özel Maliyetler<br>
+                                                    267. Diğer Maddi Olmayan Duran Varlıklar<br>
+                                                    268. Birikmiş Amortismanlar(-)<br>
+                                                    269. Verilen Avanslar</p>
+                                                    <p><b>27. Özel Tükenmeye Tabi Varlıklar</b></p>
+                                                    <p>271. Arama Giderleri<br>
+                                                        272. Hazırlık Ve Geliştirme Giderleri<br>
+                                                        277. Diğer Özel Tükenmeye Tabi Varlıklar<br>
+                                                        278. Birikmiş Tükenme Payları(-)<br>
+                                                        279. Verilen Avanslar</p>
+                                                        <p><b>28. Gelecek Yıllara Ait Giderler Ve Gelir Tahakkukları</b></p>
+                                                        <p>280. Gelecek Yıllara Ait Giderler<br>
+                                                            281. Gelir Tahakkukları</p>
+                                                            <p><b>29. Diğer Duran Varlıklar</b></p>
+                                                            <p>291. Gelecek Yıllarda İndirilecek Kdv<br>
+                                                                292. Diğer Kdv<br>
+                                                                293. Gelecek Yıllar İhtiyacı Stoklar<br>
+                                                                294. Elden Çıkarılacak Stoklar Ve Maddi Duran Varlıklar<br>
+                                                                295. Peşin Ödenen Vergi Ve Fonlar<br>
+                                                                297. Diğer Çeşitli Duran Varlıklar<br>
+                                                                298. Stok Değer Düşüklüğü Karşılığı(-)<br>
+                                                                299. Birikmiş Amortismanlar(-)</p>
+                                                                <p><b>3. KISA VADELİ YABANCI KAYNAKLAR</b></p>
+                                                                <p><b>30. Mali Borçlar</b></p>
+                                                                <p>300. Banka Kredileri<br>
+                                                                    303. Uzun Vadeli Kredilerin Anapara Taksitleri Ve Faizleri<br>
+                                                                    304. Tahvil Anapara Borç, Taksit Ve Faizleri<br>
+                                                                    305. Çıkarılan Bonolar Ve Senetler<br>
+                                                                    306. Çıkarılmış Diğer Menkul Kıymetler<br>
+                                                                    308. Menkul Kıymetler İhraç Farkı(-)<br>
+                                                                    309. Diğer Mali Borçlar</p>
+                                                                    <p><b>32. Ticari Borçlar</b></p>
+                                                                    <p>320. Satıcılar<br>
+                                                                        321. Borç Senetleri<br>
+                                                                        322. Borç Senetleri Reeskontu(-)<br>
+                                                                        326. Alınan Depozito Ve Teminatlar<br>
+                                                                        329. Diğer Ticari Borçlar</p>
+                                                                        <p><b>33. Diğer Borçlar</b></p>
+                                                                        <p>331. Ortaklara Borçlar<br>
+                                                                            332. İştiraklere Borçlar<br>
+                                                                            333. Bağlı Ortaklıklara Borçlar<br>
+                                                                            335. Personele Borçlar<br>
+                                                                            336. Diğer Çeşitli Borçlar<br>
+                                                                            337. Diğer Borç Senetleri Reeskontu(-)</p>
+                                                                            <p><b>34. Alınan Avanslar</b></p>
+                                                                            <p>340. Alınan Sipariş Avansları<br>
+                                                                                349. Alınan Diğer Avanslar</p>
+                                                                                <p><b>35. Yıllara Yaygın İnşaat Ve Onarım Hakedişleri</b></p>
+                                                                                <p>350,358 Yıllara Yaygın İnşaat Ve Onarım Hakedişleri Bedelleri</p>
+                                                                                <p><b>36. Ödenecek Vergi Ve Diğer Yükümlülükler</b></p>
+                                                                                <p>360. Ödenecek Vergi Ve Fonlar<br>
+                                                                                    361. Ödenecek Sosyal Güvenlik Kesintileri<br>
+                                                                                    368. Vadesi Geçmiş, Ertelenmiş Veya Taksitlendirilmiş Vergi Ve Diğer Yükümlülükler<br>
+                                                                                    369. Ödenecek Diğer Yükümlülükler</p>
+                                                                                <p><b>37. Borç Ve Gider Karşılıkları</b></p>
+                                                                                <p>370. Dönem Kârı Vergi Ve Diğer Yasal Yükümlülük Karşılıkları<br>
+                                                                                    371. Dönem Kârının Peşin Ödenen Vergi Ve Diğer Yükümlülükleri(-)<br>
+                                                                                    372. Kıdem Tazminatı Karşılığı<br>
+                                                                                    373. Maliyet Giderleri Karşılığı<br>
+                                                                                    379. Diğer Borç Ve Gider Karşılıkları</p>
+                                                                                <p><b>38. Gelecek Aylara Ait Gelirler Ve Gider Tahakkukları</b></p>
+                                                                                <p>380. Gelecek Aylara Ait Gelirler<br>
+                                                                                    381. Gider Tahakkukları</p>
+                                                                                <p><b>39. Diğer Kısa Vadeli Yabancı Kaynaklar</b></p>
+                                                                                <p>391. Hesaplanan Kdv<br>
+                                                                                    392. Diğer Kdv<br>
+                                                                                    393. Merkez Ve Şubeler Cari Hesabı<br>
+                                                                                    397. Sayım Ve Tesellüm Fazlaları<br>
+                                                                                    399. Diğer Çeşitli Yabancı Kaynaklar</p>
+                                                                                <p><b>4. UZUN VADELİ YABANCI KAYNAKLAR</b></p>
+                                                                                <p><b>40. Mali Borçlar</b></p>
+                                                                                <p>400. Banka Kredileri<br>
+                                                                                    405. Çıkarılmış Tahviller<br>
+                                                                                    407. Çıkarılmış Diğer Menkul Kıymetler<br>
+                                                                                    408. Menkul Kıymetler İhraç Farkı(-)<br>
+                                                                                    409. Diğer Mali Borçlar</p>
+                                                                                <p><b>42. Ticari Borçlar</b></p>
+                                                                                <p>420. Satıcılar<br>
+                                                                                    421. Borç Senetleri<br>
+                                                                                    422. Borç Senetleri Reeskontu(-)<br>
+                                                                                    426. Alınan Depozito Ve Teminatlar<br>
+                                                                                    429. Diğer Ticari Borçlar</p>
+                                                                                <p><b>43. Diğer Borçlar</b></p>
+                                                                                <p>431. Ortaklara Borçlar<br>
+                                                                                    432. İştiraklere Borçlar<br>
+                                                                                    433. Bağlı Ortaklıklara Borçlar<br>
+                                                                                    436. Diğer Çeşitli Borçlar<br>
+                                                                                    437. Diğer Borç Senetleri Reeskontu(-)<br>
+                                                                                    438. Kamuya Olan Ertelenmiş Veya Taksitlendirilmiş Borçlar</p>
+                                                                                <p><b>44. Alınan Avanslar</b></p>
+                                                                                <p>440. Alınan Sipariş Avansları<br>
+                                                                                    449. Alınan Diğer Avanslar</p>
+                                                                                <p><b>47. Borç Ve Gider Karşılıkları</b></p>
+                                                                                <p>472. Kıdem Tazminatı Karşılığı<br>
+                                                                                    479. Diğer Borç Ve Gider Karşılıkları</p>
+                                                                                <p><b>48. Gelecek Yıllara Ait Gelirler Ve Gider Tahakkuklar</b></p>
+                                                                                <p>480. Gelecek Yıllara Ait Gelirler<br>
+                                                                                    481. Gider Tahakkukları</p>
+                                                                                <p><b>49. Diğer Uzun Vadeli Yabancı Kaynaklar</b></p>
+                                                                                <p>492. Gelecek Yıllara Ertelenmiş Veya Terkin Edilecek Kdv<br>
+                                                                                    493. Tesise Katılma Payları<br>
+                                                                                    499. Diğer Çeşitli Uzun Vadeli Yabancı Kaynaklar</p>
+                                                                                <p><b>5. ÖZ KAYNAKLAR</b></p>
+                                                                                <p><b>50. Ödenmiş Sermaye</b></p>
+                                                                                <p>500. Sermaye<br>
+                                                                                    501. Ödenmemiş Sermaye(-)</p>
+                                                                                <p><b>52. Sermaye Yedekleri</b></p>
+                                                                                <p>520. Hisse Senetleri İhraç Primleri<br>
+                                                                                    521. Hisse Senedi İptal Kârları<br>
+                                                                                    522. Maddi Duran Varlık Yeniden Değerleme Artışları<br>
+                                                                                    523. İştirakler Yeniden Değerleme Artışları<br>
+                                                                                    524. Maliyet Artışları Fonu<br>
+                                                                                    529. Diğer Sermaye Yedekleri</p>
+                                                                                <p><b>54. Kâr Yedekleri</b></p>
+                                                                                <p>540. Yasal Yedekler<br>
+                                                                                    541. Statü Yedekleri<br>
+                                                                                    542. Olağanüstü Yedekler<br>
+                                                                                    548. Diğer Kâr Yedekleri<br>
+                                                                                    549. Özel Fonlar</p>
+                                                                                <p><b>57. Geçmiş Yıllar Kârları</b></p>
+                                                                                <p>570. Geçmiş Yıllar Kârları</p>
+                                                                                <p><b>58. Geçmiş Yıllar Zararları(-)</b></p>
+                                                                                <p>580. Geçmiş Yıllar Zararları(-)</p>
+                                                                                <p><b>59. Dönem Net Kârı (Zararı)</b></p>
+                                                                                <p>590. Dönem Net Kârı<br>
+                                                                                    591. Dönem Net Zararı(-)</p>
+                                                                                <p><b>6. GELİR TABLOSU HESAPLARI</b></p>
+                                                                                <p><b>60. Brüt Satışlar</b></p>
+                                                                                <p>600. Yurt İçi Satışlar<br>
+                                                                                    601. Yurt Dışı Satışlar<br>
+                                                                                    602. Diğer Gelirler</p>
+                                                                                <p><b>61. Satış İndirimleri(-)</b></p>
+                                                                                <p>610. Satıştan İadeler(-)<br>
+                                                                                    611. Satış İndirimleri(-)<br>
+                                                                                    612. Diğer İndirimler(-)</p>
+                                                                                <p><b>62. Satışların Maliyeti(-)</b></p>
+                                                                                <p>620. Satılan Mamuller Maliyeti(-)<br>
+                                                                                    621. Satılan Ticari Mallar Maliyeti(-)<br>
+                                                                                    622. Satılan Hizmet Maliyeti(-)<br>
+                                                                                    623. Diğer Satışların Maliyeti(-)</p>
+                                                                                <p><b>63. Faaliyet Giderleri(-)</b></p>
+                                                                                <p>630. Araştırma Ve Geliştirme Giderleri(-)<br>
+                                                                                    631. Pazarlama Satış Ve Dağıtım Giderleri(-)<br>
+                                                                                    632. Genel Yönetim Giderleri(-)</p>
+                                                                                <p><b>64. Diğer Faaliyetlerden Olağan Gelir Ve Kârlar</b></p>
+                                                                                <p>640. İştiraklerden Temettü Gelirleri<br>
+                                                                                    641. Bağlı Ortaklıklardan Temettü Gelirleri<br>
+                                                                                    642. Faiz Gelirleri<br>
+                                                                                    643. Komisyon Gelirleri<br>
+                                                                                    644. Konusu Kalmayan Karşılıklar<br>
+                                                                                    645. Menkul Kıymet Satış Kârları<br>
+                                                                                    646. Kambiyo Kârları<br>
+                                                                                    647. Reeskont Faiz Gelirleri<br>
+                                                                                    648. Enflasyon Düzeltme Kârları<br>
+                                                                                    649. Diğer Olağan Gelir Ve Kârlar</p>
+                                                                                <p><b>65. Diğer Faaliyetlerden Olağan Gider Ve Zararlar(-)</b></p>
+                                                                                <p>653. Komisyon Giderleri(-)<br>
+                                                                                    654. Karşılık Giderleri(-)<br>
+                                                                                    655. Menkul Kıymet Satış Zararları(-)<br>
+                                                                                    656. Kambiyo Zararları(-)<br>
+                                                                                    657. Reeskont Faiz Giderleri(-)<br>
+                                                                                    658. Enflasyon Düzeltmesi Zararları(-)<br>
+                                                                                    659. Diğer Olağan Gider Ve Zararlar(-)</p>
+                                                                                <p><b>66. Finansman Giderleri(-)</b></p>
+                                                                                <p>660. Kısa Vadeli Borçlanma Giderleri(-)<br>
+                                                                                    661. Uzun Vadeli Borçlanma Giderleri(-)</p>
+                                                                                <p><b>67. Olağan Dışı Gelir Ve Kârlar</b></p>
+                                                                                <p>671. Önceki Dönem Gelir Ve Kârları<br>
+                                                                                    679. Diğer Olağan Dışı Gelir Ve Kârlar</p>
+                                                                                <p><b>68. Olağan Dışı Gider Ve Zararlar(-)</b></p>
+                                                                                <p>680. Çalışmayan Kısım Gider Ve Zararları(-)<br>
+                                                                                    681. Önceki Dönem Gider Ve Zararları(-)<br>
+                                                                                    689. Diğer Olağan Dışı Gider Ve Zararlar(-)</p>
+                                                                                <p><b>69. Dönem Net Kârı Veya Zararı</b></p>
+                                                                                <p>690. Dönem Kârı Veya Zararı<br>
+                                                                                    691. Dönem Kârı Vergi Ve Diğer Yasal Yükümlülük Karşılıkları(-)<br>
+                                                                                    692. Dönem Net Kârı Veya Zararı<br>
+                                                                                    697. Yıllara Yaygın İnşaat Ve Enflasyon Düzeltme Hesabı<br>
+                                                                                    698. Enflasyon Düzeltme Hesabı</p>
+                                                                                <p><b>7. MALİYET HESAPLARI (7/A SEÇENEĞİ)</b></p>
+                                                                                <p><b>70. Maliyet Muhasebesi Bağlantı Hesapları</b></p>
+                                                                                <p>700. Maliyet Muhasebesi Bağlantı Hesabı<br>
+                                                                                    701. Maliyet Muhasebesi Yansıtma Hesabı</p>
+                                                                                <p><b>71. Direkt İlk Madde Ve Malzeme Giderleri</b></p>
+                                                                                <p>710. Direkt İlk Madde Ve Malzeme Giderleri Hesabı<br>
+                                                                                    711. Direkt İlk Madde Ve Malzeme Yansıtma Hesabı<br>
+                                                                                    712. Direkt İlk Madde Ve Malzeme Fiyat Farkı<br>
+                                                                                    713. Direkt İlk Madde Ve Malzeme Miktar Farkı</p>
+                                                                                <p><b>72. Direkt İşçilik Giderleri</b></p>
+                                                                                <p>720. Direkt İşçilik Giderleri<br>
+                                                                                    721. Direkt İşçilik Giderleri Yansıtma Hesabı<br>
+                                                                                    722. Direkt İşçilik Ücret Farkları<br>
+                                                                                    723. Direkt İşçilik Süre Farkları</p>
+                                                                                <p><b>73. Genel Üretim Giderleri</b></p>
+                                                                                <p>730. Genel Üretim Giderleri<br>
+                                                                                    731. Genel Üretim Giderleri Yansıtma Hesabı<br>
+                                                                                    732. Genel Üretim Giderleri Bütçe Farkları<br>
+                                                                                    733. Genel Üretim Giderleri Verimlilik Giderleri<br>
+                                                                                    734. Genel Üretim Giderleri Kapasite Farkları</p>
+                                                                                <p><b>74. Hizmet Üretim Maliyeti</b></p>
+                                                                                <p>740. Hizmet Üretim Maliyeti<br>
+                                                                                    741. Hizmet Üretim Maliyeti Yansıtma Hesabı<br>
+                                                                                    742. Hizmet Üretim Maliyeti Fark Hesapları</p>
+                                                                                <p><b>75. Araştırma Ve Geliştirme Giderleri</b></p>
+                                                                                <p>750. Araştırma Ve Geliştirme Giderleri <br>
+                                                                                    751. Araştırma Ve Geliştirme Giderleri Yansıtma Hesabı <br>
+                                                                                    752. Araştırma Ve Geliştirme Gider Farkları</p>
+                                                                                <p><b>76. Pazarlama Satış Ve Dağıtım Giderleri</b></p>
+                                                                                <p>760. Pazarlama Satış Ve Dağıtım Giderleri <br>
+                                                                                    761. Pazarlama Satış Ve Dağıtım Giderleri Yansıtma Hesabı <br>
+                                                                                    762. Pazarlama Satış Ve Dağıtım Giderleri Fark Hesabı</p>
+                                                                                <p><b>77. Genel Yönetim Giderleri</b></p>
+                                                                                <p>770. Genel Yönetim Giderleri<br>
+                                                                                    771. Genel Yönetim Giderleri Yansıtma Hesabı<br>
+                                                                                    772. Genel Yönetim Gider Farkları Hesabı</p>
+                                                                                <p><b>78. Finansman Giderleri</b></p>
+                                                                                <p>780. Finansman Giderleri<br>
+                                                                                    781. Finansman Giderleri Yansıtma Hesabı<br>
+                                                                                    782. Finansman Giderleri Fark Hesabı</p>
+                                                                                <p><b>7. MALİYET HESAPLARI (7/B SEÇENEĞİ)</b></p>
+                                                                                <p><b>79. Gider Çeşitleri</b></p>
+                                                                                <p>790. İlk Madde Ve Malzeme Giderleri<br>
+                                                                                    791. İşçi Ücret Ve Giderleri<br>
+                                                                                    792. Memur Ücret Ve Giderleri<br>
+                                                                                    793. Dışarıdan Sağlanan Fayda Ve Hizmetler<br>
+                                                                                    794. Çeşitli Giderler<br>
+                                                                                    795. Vergi, Resim Ve Harçlar<br>
+                                                                                    796. Amortisman Ve Tükenme Payları<br>
+                                                                                    797. Finansman Giderleri<br>
+                                                                                    798. Gider Çeşitleri Yansıtma Hesabı<br>
+                                                                                    799. Üretim Maliyet Hesabı</p>
+                                                                                <p><b>8. SERBEST HESAPLAR</b></p>
+                                                                                <p><b>9. NAZIM HESAPLAR</b></p>
+                                                                                <p>9. Nazım Hesaplar</p>
+
+    </main>
+</div>
+
+<footer>
+
+    <p>Tüm hakları saklıdır. 2024 ©</p>
+
+</footer>
+
+</body>
+</html>

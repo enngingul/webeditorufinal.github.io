@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Üst, Sol, Orta, Sağ, Alt Yapısı</title>
+<style>
+
+
+.mavi{
+    color: #3A426D;
+}
+
+.kirmizi{
+    color: rgb(255, 0, 0);
+}
+
+ul.ustmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2E3C50;
+    height: 120px;
+    
+}
+
+li a.ustmenu1 {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 53px 25px;
+    text-decoration: none;
+    float: right;
+}
+
+li a:hover:not(.active) {
+
+    background-color: rgb(42, 45, 65);
+    color: white;
+}
+
+
+
+/* Aktif Menü Öğesi Stili */
+li a.active {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+li a.active:hover {
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: #2E3C50;
+    font-size: 23px;
+}
+
+/* Menü Stili */
+.menu1 {
+
+    list-style-type: none;
+    margin: 10px;
+    padding: 20px;
+    width: 230px;
+    border: 1px solid #d8d8d8;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu a {
+
+    text-align: left;
+    text-decoration: none;
+    color: #2E3C50;
+    font-weight: bold;
+    border: 1px solid #d8d8d8;
+    border-style: dotted;
+    display: block;
+    padding: 5px;
+    background: #ffffff;
+    border-left: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+header, footer {
+
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+
+    display: flex;
+    height: calc(100% - 160px); /* Sayfa yüksekliğinin %100'ü ve üst ve alt kısımların yüksekliğinin toplamından 160px eksiltiyoruz */
+}
+
+aside, main {
+
+    padding: 20px;
+    box-sizing: border-box; /* Kutuların içerik kutusu dahil tüm alanı kaplamasını sağlar */
+}
+
+aside {
+
+    background-color: #ffffff;
+    width: 400px;
+}
+
+main {
+
+    background-color: #ffffff;
+    width: 1000px;
+}
+
+footer {
+
+    position: relative;
+    margin-top: 700px; /* Sayfanın altından yukarı doğru bir mesafe belirleyin */
+    width: 100%;
+    background-color: #2E3C50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.resim{
+    position: relative;
+    left: 100px;
+    float: left;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+    <ul class="ustmenu">  
+        <div class="resim">
+            <img src="resimler/logo.png" alt="">
+                    </div>
+                    <li><a class="ustmenu1" href="iletisim.html">İLETİŞiM</a></li>  
+                    <li><a class="ustmenu1" href="hakkimizda.html">HAKKIMIZDA</a></li> 
+                    <li><a class="ustmenu1" href="https://www.sgk.gov.tr/Duyuru" target="_blank">PRATİK BİLGİLER</a></li>  
+                    <li><a class="ustmenu1" href="hizmetlerimiz.html">HİZMETLERİMİZ</a></li>
+                    <li><a class="ustmenu1" href="giris.html">ANA SAYFA</a></li>
+          </ul>
+
+</header>
+
+<div class="container">
+    <aside><ul class="menu">
+			
+        <ul class="menu1">
+        <li><a class="active">ALFABETİK MENÜ</a></li>
+        <li><a href="amortisman.html">Amortismanlar</a></li>
+        <li><a href="asgariücretler.html">Asgeri Ücretler</a></li>
+        <li><a href="bagkur.html">Bağ-Kur</a></li>
+        <li><a href="beyanname.html">Beyanname Süreleri</a></li>
+        <li><a href="dilekceform.html">Dilekçe ve Formlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/portal/login" target="_blank">E-Beyanname</a></li>
+        <li><a href="https://ebildirge.sgk.gov.tr/WPEB/amp/loginldap" target="_blank">E-Bildirge</a></li>
+        <li><a href="hadvemiktar.html">Had ve Miktarlar</a></li>
+        <li><a href="https://dijital.gib.gov.tr/" target="_blank">İnternet Vergi Dairesi</a></li>
+        <li><a href="iscilikmaliyetleri.html">İşçilik Maliyetleri</a></li>
+        <li><a href="https://www.gib.gov.tr/gibmevzuat" target="_blank">Kanun ve Mevzuatlar</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/yararli-bilgiler/kdv-oranlari-listesi" target="_blank">KDV Oranları Listesi</a></li>
+        <li><a href="https://www.resmigazete.gov.tr/" target="_blank">Resmi Gazete</a></li>
+        <li><a href="sorgulama.html">Sorgulamalar</a></li>
+        <li><a href="https://www.sgk.gov.tr/" target="_blank">SGK (Sigorta)</a></li>
+        <li><a href="tekdüzen.html">Tek Düzen Hesap Planı</a></li>
+        <li><a href="https://www.gib.gov.tr/yardim-ve-kaynaklar/vergi-takvimi" target="_blank">Vergi Takvimi</a></li>
+        <li><a href="vergitürü.html">Vergi Türü Kodları</a></li>
+        <li><a href="yillikizinler.html">Yıllık Ücretli İzinler</a></li>
+    </ul>
+</ul></aside>
+    <main>
+
+        <div style="height: 1000px; overflow: scroll; width: 850px;">
+            <p>2024 brüt asgari ücretin 20.002,5 TL olması ile 2024 bağkur primleri de açıklık kazanmış oldu.
+    <br>
+            Bağkur primleri sigortalıların kendi belirlediği sigorta primine esas kazancının %34,5’idir.    
+            <p><b class="mavi">ÖRNEK:</b> Sigortalı kazancını 30000 TL olarak bildirirse ödeyeceği bağkur primi 30000 x %34,5 = 10.350 TL’dir.</p>
+            <br>
+            <h4 class="mavi">En Düşük ve En Yüksek Esnaf, Şirket Ortağı, Muhtar, Avukat, Jokey Bağkur Primleri</h4>
+            <p>2024 yılı içinde en düşük bağkur primi: 6.900,86 TL</p>
+            <p>2024 yılı içinde en yüksek bağkur primi: 51.756,46 TL</p>
+            <p>Bağkur primlerinin belirlenen zamanlarda ödenmesi halinde ise bu tutarlara yüzde 5 indirim uygulanacaktır.</p>
+            <p>2024 yılında yüzde 5 indirimli en düşük bağkur primi: 5900,73 TL</p>
+            <p>2024 yılı içinde yüzde 5 indirimli en yüksek bağkur primi: 44.255,47 TL</p>
+    <br>
+            <h3 class="mavi">En Düşük ve En Yüksek Tarım/Çiftçi Bağkur Primleri</h3>
+            <p>2024 yılı içinde en düşük bağkur primi: 6.900,86 TL</p>
+            <p>2024 yılı içinde en yüksek bağkur primi: 51.756,46 TL</p>
+            <p>Bağkur primlerinin belirlenen zamanlarda ödenmesi halinde ise bu tutarlara yüzde 5 indirim uygulanacaktır.</p>
+            <p>2024 yılında yüzde 5 indirimli en düşük bağkur primi: 5900,73 TL</p>
+            <p>2024 yılı içinde yüzde 5 indirimli en yüksek bağkur primi: 44.255,47 TL</p>
+    <br>
+    
+    
+            <h2 class="mavi">2023 BAĞKUR PRİMLERİ HESAPLAMA</h2>    
+            <h4 class="kirmizi">1 Temmuz - 31 Aralık 2023</h4>
+            <p>Ödeme vadesi geçmiş prim borcu olan ve prim ödemelerini düzenli yapmayanlar için ise 2023 yılı bağkur primi 
+            4.628,50 TL olacaktır.</p>
+            <p>Prim ödemesini düzenli yapanlar için aylık 5 puanlık indirimli minimum bağkur primi; 3.957,27 TL</p>
+    <br>
+            <h4 class="kirmizi">1 Ocak - 30 Haziran 2023</h4>
+            <p>Ödeme vadesi geçmiş prim borcu olan ve prim ödemelerini düzenli yapmayanlar için ise 2023 yılı bağkur primi 3.452,76 TL olacaktır.</p>
+            <p>Prim ödemesini düzenli yapanlar için aylık 5 puanlık indirimli minimum bağkur primi; 2.952,36 TL.</p>
+    <br>
+            <h2 class="mavi">2022 BAĞKUR PRİMLERİ HESAPLAMA</h2>
+            <h4 class="kirmizi">1 Temmuz - 31 Aralık 2022</h4>
+            <p>Ödeme vadesi geçmiş prim borcu olan ve prim ödemelerini düzenli yapmayanlar için ise 2022 yılı bağkur primi 2.232,50 TL olacaktır.</p>
+            <p>Prim ödemesini düzenli yapanlar için aylık 5 puanlık indirimli minimum bağkur primi; 1.908,95 TL</p>
+            <h4 class="kirmizi">1 Ocak - 30 Haziran 2022</h4>
+            <p>Ödeme vadesi geçmiş prim borcu olan ve prim ödemelerini düzenli yapmayanlar için ise 2022 yılı bağkur primi 1.726,38 TL olacaktır.</p>
+            <p>Prim ödemesini düzenli yapanlar için aylık 5 puanlık indirimli minimum bağkur primi; 1476,18 TL</p>
+    <br>
+            <h2 class="mavi">2021 BAĞKUR PRİMLERİ HESAPLAMA</h2>
+            <p>Bağkur primleri 2021 yılında indirimsiz 1234,25 TL, indirimli olarak ise 1055,36 TL miktarında ödenecek. Bu oran, yeni yılda uygulanacak olan asgari ücret üzerinden belirlendi.</p>
+            <p>Bağ-Kur sigortalılarının ödemek zorunda oldukları primler ve hesaplama yöntemi aşağıda belirtilmiştir;
+            <br>Bağkur prim oranları nasıl hesaplanıyor?</p>
+            <p>a) Sigorta primi, sigortalının seçtiği, intibak ettirildiği veya yükseltildiği gelir basamağının %20’sinden,</p>
+            <p>b) Sağlık sigortası primi, ilk sekiz basamakta bulunan sigortalılar için sekizinci gelir basamağı tutarının % 20 si, dokuz ve daha yukarı basamakta bulunan sigortalılar için bulundukları gelir basamağı tutarının % 20’sinden,/p>
+            <p>c) Giriş keseneği, ilk defa sigortalı olanların seçtikleri veya intibak ettirildikleri gelir basamağı tutarının %25’inden,</p>
+            <p>d) Basamak yükseltme farkı, sigortalının yükseldiği gelir basamağı ile daha önce bulunduğu gelir basamağı arasındaki farktan oluşur.</p>
+            <p>Primler tam ay üzerinden hesaplanır.</p>
+    
+            <h2 class="mavi">2020 BAĞKUR PRİMLERİ HESAPLAMA</h2>
+            <h4>2020 Çiftçi Bağkur Primi</h4>
+            <p>Eğer geçmiş döneme ilişkin bağkur prim borcunuz yoksa, prim ödemelerinizi düzenli yapıyorsanız yüzde 5 indirim ile ödeyeceğiniz en düşük tarım/çiftçi 2020 bağkur primleri aylık olarak 781,36 TL, geçmiş dönem borcunuz varsa ve prim ödemelerinizi düzenli yapmıyorsanız aylık en düşük prim tutarınız ise 913,80 TL olacaktır.Tarım/çiftçi bağkuru kapsamında ödenecek aylık en yüksek bağkur primi tutarı ise yukarıda belirtilen tutarların 7,5 katıdır</p>
+            <h4>2020 Esnaf Bağkur Primi</h4>
+            <p>Bağkur aylık ödemenizi düzenli yapıyorsanız ve geçmiş döneme ait borcunuz yoksa 5 puanlık indirim ile ödeyeceğiniz en dusuk bagkur primi 868,18 TL, aylık bağkur ödemesini düzenli yapmıyorsanız ve geçmiş döneme ait borçlarınız varsa bu durumda ise ödeyeceğiniz bağkur ücreti aylık olarak 1015,33 TL olacaktır.</p>
+            <p>En yüksek şirket ortağı/esnaf bağkur primi de aylık olarak yukarıda belirtilen tutarların 7,5 katı olacaktır.</p> 
+            <h4>2020 İsteğe Bağlı Bağkur Primi</h4>
+            <p>İsteğe bağlı bağkurlular 5 puanlık indirimden yararlanamıyor. İsteğe bağlı bağkur kapsamında prim ödeyenler aylık en düşük brüt asgari ücretin %32'si, en yüksek ise bunun 7,5 katı oranında prim ödemesi yaparlar. Bu kapsamda ödenen primler bağkur hizmeti olarak sayılır ve bu kişiler 9000 günle normal emeklilik, 5400 günle de yaş haddinden emeklilik hakkı elde ederler.</p>
+            <p>İsteğe bağlı aylik bagkur ucreti 2020 yılında en düşük 941,76 TL en yüksek ise 7.063,00TL dir.</p>
+            <h4>En Düşük Bağkur Primi</h4>
+            <p>4b bağkur kapsamında en düşük prim ödemesi yapılan bağkur kolu ev hanımları için isteğe bağlı bağkurdur. Ev hanımları bu kapsamda düşük bağkur primi ödeyerek emeklilik hakkına sahip olabilmekteler..</p>
+            <h3>2019 Yılı Bağkur Prim Tutarları</h3>
+            <p>01 Ocak 2019 tarihi ile 31 Aralık 2019 tarihleri arası ödenecek 4b en düşük bağkur primleri şu şekilde;</p>
+            <p>Esnaf, şirket ortaklarının ödeyeceği bağkur prim tutarı indirimsiz olarak <b style="color: red;">882,51 TL</b>, prim borcunuzun olmaması ve primlerinizi düzenli ödemeniz halinde ise %5 indirimli olarak <b style="color: red;">754,61 TL</b>. En yüksek şirket ortağı/esnaf bağkur primi de aylık olarak yukarıda belirtilen tutarların 7,5 katı olacaktır.</p>
+            <p>İsteğe bağlı 4b bağkur primi en düşük <b style="color: red;">818,56 TL</b>, en yüksek <b style="color: red;">6.139,20 TL</b> (isteğe bağlı 4b bağkurlular %5 oranındaki indirimden yararlanamaz. )</p>
+            <p>Tarım/çiftçi bağkuru primi indirimsiz olarak <b style="color: red;">764,84 TL</b>, prim borcunuzun olmaması ve primlerinizi düzenli ödemeniz halinde ise %5 indirimli olarak <b style="color: red;">653,99 TL</b> . Tarım/çiftçi bağkuru kapsamında ödenecek aylık en yüksek bağkur primi tutarı ise yukarıda belirtilen tutarların 7,5 katıdır.</p>
+            <h3>2018 Yılı Bağkur Prim Tutarları</h3>
+            <p>01 Ocak 2018 tarihi ile 31 Aralık 2018 tarihleri arası ödenecek 4b en düşük bağkur primleri şu şekilde;</p>
+            <p>Esnaf, şirket ortaklarının ödeyeceği bağkur prim tutarı indirimsiz olarak <b style="color: red;">700,17 TL</b>, prim borcunuzun olmaması ve primlerinizi düzenli ödemeniz halinde ise %5 indirimli olarak <b style="color: red;">598,70 TL</b>.</p>
+            <p>İsteğe bağlı 4b bağkur primi <b style="color: red;">649,44 TL</b>,(isteğe bağlı 4b bağkurlular %5 oranındaki indirimden yararlanamaz. )</p>
+            <p>Tarım/çiftçi bağkuru primi indirimsiz olarak <b style="color: red;">583,48 TL</b>, prim borcunuzun olmaması ve primlerinizi düzenli ödemeniz halinde ise %5 indirimli olarak  <b style="color: red;">498,91 TL.</b></p> 
+    
+    
+         </div>
+
+    </main>
+</div>
+
+<footer>
+
+    <p>Tüm hakları saklıdır. 2024 ©</p>
+
+</footer>
+
+</body>
+</html>
